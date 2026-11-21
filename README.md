@@ -93,7 +93,7 @@ See each skill's **Related Skills** section for the full dependency map.
 | [conversion-tracking](skills/conversion-tracking/) | When the user wants to set up, audit, or fix conversion tracking to Google Ads, Meta, GA4, LinkedIn, and TikTok, or... |
 | [copy-editing](skills/copy-editing/) | When the user wants to edit, tighten, proofread, or refresh existing copy, or asks whether to keep, cut, or change a... |
 | [copywriting](skills/copywriting/) | When the user wants to write or rewrite page copy (homepage, landing, pricing, feature), or asks which headline,... |
-| [creator-benchmarking](skills/creator-benchmarking/) | When the user wants to find benchmark creators (对标账号) and viral content (爆款) on Douyin, Xiaohongshu, X, or TikTok to learn from for their own account, or asks to reverse-engineer viral posts, tear down hook/structure/value/production/CTA, or grow their account... |
+| [creator-benchmarking](skills/creator-benchmarking/) | When the user wants to find benchmark creators (对标账号) and viral content (爆款) on Douyin (抖音), Xiaohongshu (小红书), X, or... |
 | [cro](skills/cro/) | When the user wants more conversions from a page or form, or asks why a page isn't converting, what to change first, or... |
 | [customer-research](skills/customer-research/) | When the user wants to run or synthesize customer research, or asks what customer quotes, reviews, or feedback really... |
 | [directory-submissions](skills/directory-submissions/) | When the user wants to list a product in startup, SaaS, AI, MCP, and review directories, or asks which directories are... |

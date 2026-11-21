@@ -1,0 +1,50 @@
+{
+	"code":2000,
+	"data":{
+		"list":[
+			{
+				"authorAvatarUrl":"https://p26.douyinpic.com/aweme-avatar/tos-cn-i-c9aec8xkvj_dc66711e907c4d69b54ddfff04c72622~tplv-dy-shrink:188:188.jpeg?from=2956013662",
+				"authorFansCount":1118,
+				"authorName":"巴布巴布！",
+				"authorSecUid":"MS4wLjABAAAAI4-l6zpMdHouaJbuGmNMRd4ASGAEMAwle3o-PcllUvsvb1jGoIScrIpbcGfFpZF4",
+				"authorShortId":"0",
+				"authorUid":"3986184974118922",
+				"authorUniqueId":"27730611488",
+				"collectCount":236,
+				"commentCount":24,
+				"content":"第2集 | 最后几秒竟然出现了两个巴布，但我没token修稿了#兔狲 #动画 #可爱动物 #轻漫计划原创动漫",
+				"coverUrl":"https://p11-sign.douyinpic.com/tos-cn-i-dy/56f443c530274942a74d23f5e03642b0~noop.webp?lk3s=138a59ce&x-expires=1794078000&x-signature=jKsElxs5g7yMMKKUkIOK3qbaLAY%3D&from=327834062_large&s=PackSourceEnum_CHALLENGE_AWEME&se=false&sc=cover&biz_tag=aweme_video&l=20261025035259B292DDBC05BD5E810DD0",
+				"duration":28100,
+				"imageUrlList":[],
+				"likeCount":1831,
+				"opusUrl":"https://www.iesdouyin.com/share/video/7698310053283024155",
+				"publishTime":"2026-10-19 17:34:50",
+				"shareCount":317,
+				"tagList":[
+					{
+						"tagId":"1734469003022340",
+						"tagName":"兔狲"
+					},
+					{
+						"tagId":"1566997268986882",
+						"tagName":"动画"
+					},
+					{
+						"tagId":"1573095181741069",
+						"tagName":"可爱动物"
+					},
+					{
+						"tagId":"1776092435019783",
+						"tagName":"轻漫计划原创动漫"
+					}
+				],
+				"videoId":"7698310053283024155",
+				"videoType":"0"
+			}
+		],
+		"pageNum":1,
+		"pageSize":50,
+		"total":1
+	},
+	"msg":"成功"
+}

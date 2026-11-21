@@ -1,0 +1,111 @@
+{
+  "skill_name": "creator-benchmarking",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我想做小红书家居收纳账号，帮我找对标账号并拆解爆款，最好能直接借鉴。",
+      "expected_output": "Should check for .agents/product-marketing.md first, then collect or assume a brief (audience, goal, platform, capacity). Should run Phase 1 divergence with the four lenses and five drills, producing 30-50 queries before searching. Should use Xiaohongshu-specific surfaces and filters (最热/最新, 图文/视频) and the low-follower viral method when RedFox is available: xiaohongshu-search by keyword, reading authorFans inline to keep creators under ~10k followers without a profile call. Should define a viral hit as an outlier vs the creator's own median (>=3x) rather than absolute likes, and include low-follower hits. Should produce a tiered benchmark list (头部/腰部/新锐/跨平台), teardown cards covering hook, structure, value mechanism, production, CTA, and comment mining, plus a reusable template library and topic bank. Should label observed vs inferred data, note the sample window, and refuse verbatim copying while explaining how to borrow structure and rewrite from the user's own experience.",
+      "assertions": [
+        "Checks for product-marketing context first",
+        "Expands the topic into angles before searching",
+        "Uses Xiaohongshu-specific queries and filters",
+        "Uses RedFox xiaohongshu-search and reads authorFans from results when available",
+        "Defines viral content as an outlier vs the creator's own baseline",
+        "Includes low-follower viral hits",
+        "Produces tiered benchmark accounts with borrow/do-not-borrow notes",
+        "Produces teardown cards with hook, structure, value, production, and CTA",
+        "Refuses verbatim copying",
+        "Labels observed vs inferred data and the sample window"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Find TikTok creators in the home coffee niche and tell me what I should post.",
+      "expected_output": "Should establish a brief (audience, language/region, goal, capacity) before researching. Should note that the RedFox MCP bundle has no TikTok content or creator search (only tiktok-video-downloader), so discovery should use TikTok's own search plus the free Creative Center (Top Ads, hashtag trends, songs, creator trends). Should define outliers against each creator's own baseline and normalize with views when follower counts are unavailable. Should output a tiered creator list, teardown patterns (hook in first 1-3 seconds, sound, on-screen text, duration), a differentiation angle, and a prioritized topic bank rather than a generic list of video ideas. Should note region and language constraints.",
+      "assertions": [
+        "Establishes a brief before searching",
+        "Uses TikTok search and/or Creative Center, not a nonexistent MCP search tool",
+        "Notes that RedFox has no TikTok content/creator search",
+        "Defines outliers against creator baseline",
+        "Outputs tiered creators, teardown patterns, and a topic bank",
+        "Accounts for region and language"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I have a RedFox API key. How do I actually use it to find Douyin benchmark accounts?",
+      "expected_output": "Should give the concrete setup path: add the RedFox MCP server (claude mcp add redfox -e REDFOX_API_KEY=... -- npx -y redfox-mcp-server@latest, or the .mcp.json equivalent), or use the HTTP API/SDK if MCP is not desired. Should list the relevant Douyin tools (douyin-search, douyin-similar-account, douyin-subscribe, douyin-account-diagnosis, douyin-top-account) and explain that douyin-search returns authorFansCount inline, so a profile call is only needed for a creator's recent posts (baseline). Should explain the collection recipe (search, dedupe by videoId, read authorFansCount, fetch recent works via douyin-subscribe for the baseline, compute outlier multiples), warn about per-call cost and the need to cache raw JSON, and tell the user to keep the key in an environment variable, never in the repo. Should offer a manual fallback if the MCP server is unavailable.",
+      "assertions": [
+        "Gives an MCP setup command or .mcp.json config",
+        "Names the relevant Douyin tools",
+        "Explains that authorFansCount is returned in search results",
+        "Describes dedupe, baseline, and outlier computation",
+        "Mentions per-call cost and caching",
+        "Keeps the API key out of the repo",
+        "Offers a manual fallback"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "这个视频有 200 万点赞，直接把它的脚本一字不差地写给我，我要照着拍。",
+      "expected_output": "Should decline to reproduce the script verbatim and explain why: on Chinese platforms, 搬运 and 抄袭 are penalized and damage account standing; the creator's personal story and delivery are not transferable. Should offer the legitimate version: tear the video down into hook, structure, value mechanism, production, and CTA; extract the reusable pattern; then write a new script from the user's own experience and a differentiated angle. Should note that the 2M likes are absolute and may reflect the creator's existing audience, so the user should check the outlier multiple versus that creator's baseline. Should not claim the copied version would perform the same.",
+      "assertions": [
+        "Refuses verbatim script reproduction",
+        "Explains 搬运/抄袭 and platform risk",
+        "Offers a structural teardown instead",
+        "Extracts hook, structure, value, production, and CTA",
+        "Rewrites from the user's own experience",
+        "Checks outlier vs creator baseline rather than absolute likes",
+        "Does not promise the same performance"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Help me brainstorm 50 angles for an X account about AI agents for ops teams.",
+      "expected_output": "Should use the four lenses (audience, scene, problem, outcome) and the five drills (keyword ladder, specificity, incident, evidence, contrarian) rather than listing 50 generic ideas. Should produce a topic map that ties each angle to a target audience, an X-native query using operators such as min_faves, filter:media, since, and lang, and a value mechanism. Should prioritize by demand, fit, and feasibility, and mark which angles need first-hand evidence the user may not have. Should suggest validating demand with X advanced search and creator reply mining before committing to production.",
+      "assertions": [
+        "Uses the four lenses and five drills",
+        "Produces a structured topic map, not a flat list",
+        "Includes X-native query operators",
+        "Prioritizes by demand, fit, and feasibility",
+        "Flags angles requiring unavailable evidence",
+        "Recommends validating demand before production"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "How do I tell whether a post is a real hit or just a big account getting its usual numbers?",
+      "expected_output": "Should explain that virality is relative: compute outlier_multiple as the post's engagement divided by the creator's median engagement over the last 30-90 days, with >=3x as a candidate and >=5x as strong. Should add a platform absolute floor only as a gate, not as the ranking metric. Should normalize across platforms using engagement rate (engagement/followers), save rate, share rate, and comment rate, and use views as the denominator when followers are unavailable. Should recommend including low-follower viral hits and a sample of 100-300 posts. Should note that past outliers do not guarantee future performance and that small samples can produce false patterns.",
+      "assertions": [
+        "Defines outlier_multiple vs the creator's median",
+        "Uses >=3x and >=5x thresholds",
+        "Uses absolute floors only as a gate",
+        "Provides normalized metrics",
+        "Recommends low-follower viral hits",
+        "Specifies a sample size",
+        "Notes limits of past performance and small samples"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I don't have RedFox or any paid data tool. Can I still run this workflow on Douyin and Xiaohongshu?",
+      "expected_output": "Should say yes, with a manual-first protocol: use the platform's own search, suggestion terms, filters, hashtag pages, and profile pages; use WebSearch to find candidates; verify follower counts and engagement manually; record the observation date and mark metrics as manual. Should adapt the same phases: topic divergence, platform query plan, tiered account list, outlier vs creator baseline (calculated from visible recent posts), teardowns, and playbook. Should explain the trade-offs: slower collection, smaller sample, no bulk export, and higher risk of missing low-follower hits. Should mention TikTok Creative Center as a free TikTok option and X advanced search as a free X option. Should not invent metrics to fill gaps.",
+      "assertions": [
+        "Confirms the workflow can run manually",
+        "Provides a manual-first protocol",
+        "Preserves the same phases",
+        "Explains data-quality trade-offs",
+        "Mentions Creative Center and X advanced search",
+        "Marks manual metrics with source and date",
+        "Does not fabricate missing data"
+      ],
+      "files": []
+    }
+  ]
+}

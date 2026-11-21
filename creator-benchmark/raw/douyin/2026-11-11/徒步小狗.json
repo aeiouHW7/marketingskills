@@ -1,0 +1,709 @@
+{
+  "code": 2000,
+  "data": {
+    "list": [
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_12189a4ebfcf6092eb019d9dee28cf9a.jpeg?from=327834062",
+        "authorFansCount": 1158,
+        "authorName": "金小豆豆",
+        "authorSecUid": "MS4wLjABAAAAqxxALNSsr4sxySEqbr4G-iEYTYknfo9jYP-AyhHxVGU",
+        "authorShortId": "0",
+        "authorUid": "323715426169267",
+        "authorUniqueId": "68762385404",
+        "collectCount": 0,
+        "commentCount": 0,
+        "content": "vlog｜周末京郊徒步 #小狗日记 #这么近那么美周末到河北 #自驾游",
+        "coverUrl": "https://p11-sign.douyinpic.com/tos-cn-p-0015/okczO5IQIEAWf3eewwLYePWeOni34HA0GIwtIs~c5_300x400.jpeg?lk3s=138a59ce&x-expires=1794394800&x-signature=RxaiX0z7ttoHiBCbqS22GWNwCNU%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=20261028192615D7D11AE1F85B1FD512B5",
+        "duration": 177334,
+        "imageUrlList": [],
+        "likeCount": 6,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7700806257720621706",
+        "publishTime": "2026-10-26 11:01:19",
+        "shareCount": 0,
+        "tagList": [
+          {
+            "tagId": "1595890008872968",
+            "tagName": "小狗日记"
+          },
+          {
+            "tagId": "1739863980376078",
+            "tagName": "这么近那么美周末到河北"
+          },
+          {
+            "tagId": "1563580466123777",
+            "tagName": "自驾游"
+          }
+        ],
+        "videoId": "7700806257720621706",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813c001_575e44a49ce24efabfc058a8f9cb109c.jpeg?from=327834062",
+        "authorFansCount": 2457,
+        "authorName": "小边闪电",
+        "authorSecUid": "MS4wLjABAAAAJ3c7NkW440Ycd5vad6MsQiDzUSUUkQhyrVYvCZ7kr-8J0sMnFEnvBA8eu26otRul",
+        "authorShortId": "0",
+        "authorUid": "3784943371844782",
+        "authorUniqueId": "61152973861",
+        "collectCount": 0,
+        "commentCount": 2,
+        "content": "今天又带小狗爬山啦#户外徒步 #小狗登顶 #户外徒步爬山自由",
+        "coverUrl": "https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-i-0813c000-ce/okNrEohDEDAsKxAQAyFfE9qADA3wWC0zIgfEPE~c5_300x400.jpeg?lk3s=138a59ce&x-expires=1793350800&x-signature=Lp4UL9XLtzAikZTFN7uwibpubXg%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=202610161728116F83C8044CFA21B8D3D9",
+        "duration": 153434,
+        "imageUrlList": [],
+        "likeCount": 14,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7696417313314793893",
+        "publishTime": "2026-10-14 15:09:57",
+        "shareCount": 1,
+        "tagList": [
+          {
+            "tagId": "1587716769488909",
+            "tagName": "户外徒步"
+          },
+          {
+            "tagId": "1779613972236291",
+            "tagName": "小狗登顶"
+          },
+          {
+            "tagId": "7580957545573910570",
+            "tagName": "户外徒步爬山自由"
+          }
+        ],
+        "videoId": "7696417313314793893",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_3e07c490c52da74368420d1bc5f01899.jpeg?from=327834062",
+        "authorFansCount": 6211,
+        "authorName": "Zora",
+        "authorSecUid": "MS4wLjABAAAAq-UrvqUo-akvMKj3D9O_0g-P1yYCC_IdoVqxmu-eKzFq24IanVL0d3G2oloHyzjh",
+        "authorShortId": "0",
+        "authorUid": "1525716616746456",
+        "authorUniqueId": "zzzzoraL",
+        "collectCount": 0,
+        "commentCount": 2,
+        "content": "人会在大自然里，重新长出生命力 #爬山 #大芹山 #露营 #徒步小狗",
+        "coverUrl": "https://p95-zjwztc-sign.douyinpic.com/tos-cn-i-0813c000-ce/osQfD7EVettSQLyXzUNGGgAB89JeAxlApgALIq~noop.jpeg?lk3s=138a59ce&x-expires=1794139200&x-signature=Yv81CMW1NwqaXGku1E6raJefkZk%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&biz_tag=aweme_images&l=2026102520275254942CDFDAFB7FC3C9E4",
+        "duration": 0,
+        "imageUrlList": [],
+        "likeCount": 75,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7699838277059443045",
+        "publishTime": "2026-10-23 20:25:02",
+        "shareCount": 6,
+        "tagList": [
+          {
+            "tagId": "1563670206798850",
+            "tagName": "爬山"
+          },
+          {
+            "tagId": "1609068088158215",
+            "tagName": "大芹山"
+          },
+          {
+            "tagId": "1580532647418893",
+            "tagName": "露营"
+          },
+          {
+            "tagId": "1790073814935627",
+            "tagName": "徒步小狗"
+          }
+        ],
+        "videoId": "7699838277059443045",
+        "videoType": "68"
+      },
+      {
+        "authorAvatarUrl": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_ff24824d09f7865c4e128df8a17aa958.jpeg?from=327834062",
+        "authorFansCount": 23270,
+        "authorName": "OneTigris壹虎宠物",
+        "authorSecUid": "MS4wLjABAAAAIk3H2SoE3snn_mgEtx3wYGFIuKqa_TpT6WWVazuB_AQ",
+        "authorShortId": "0",
+        "authorUid": "98076070690",
+        "authorUniqueId": "OneTigris_K9",
+        "collectCount": 0,
+        "commentCount": 0,
+        "content": "山野战术徒步小狗上线。#壹虎宠物 #壹虎胸背 #壹虎宠物装备 #战术风格 #户外",
+        "coverUrl": "https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-i-0813c001/oAYBRMXngQMfTsAAQQAA8AQeVegJ7EqBaABrtE~540x0.jpeg?lk3s=138a59ce&x-expires=1793833200&x-signature=f7xTVAZbin2OnqyKoq1yAwjf45M%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&biz_tag=aweme_images&l=202610220704330CE19A98B9F3D702C473",
+        "duration": 0,
+        "imageUrlList": [],
+        "likeCount": 16,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7696469906028169833",
+        "publishTime": "2026-10-14 18:34:03",
+        "shareCount": 1,
+        "tagList": [
+          {
+            "tagId": "1745042339064846",
+            "tagName": "壹虎宠物"
+          },
+          {
+            "tagId": "1775736306041859",
+            "tagName": "壹虎胸背"
+          },
+          {
+            "tagId": "1771852101091332",
+            "tagName": "壹虎宠物装备"
+          },
+          {
+            "tagId": "1726005016358030",
+            "tagName": "战术风格"
+          },
+          {
+            "tagId": "1571073586904066",
+            "tagName": "户外"
+          }
+        ],
+        "videoId": "7696469906028169833",
+        "videoType": "68"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b60df4824ca1d164b63c9dded88b3f61.jpeg?from=327834062",
+        "authorFansCount": 2136,
+        "authorName": "目子俊",
+        "authorSecUid": "MS4wLjABAAAA5uhLovzgAjABSX2HqB5QMrDJyhQwY1pjrP3yuJuakEHQHDgq79ZD77Jvwca_8SIr",
+        "authorShortId": "0",
+        "authorUid": "1831116419892096",
+        "authorUniqueId": "78535899903",
+        "collectCount": 0,
+        "commentCount": 0,
+        "content": "我们是产生了自我意识的局部宇宙 #户外徒步 #小狗日记 #目涯巫山 #巫山",
+        "coverUrl": "https://p26-sign.douyinpic.com/tos-cn-i-0813c001/o8ZABDiZhEBau9AAPFAgf6ip1PI1ebLACA98hC~c5_300x400.jpeg?lk3s=138a59ce&x-expires=1793347200&x-signature=cm6Op0sqGmEkRLrXietPei6Nmtg%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=20261016165424417EDBF880DAD889DB6F",
+        "duration": 9868,
+        "imageUrlList": [],
+        "likeCount": 11,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7696519676629475314",
+        "publishTime": "2026-10-14 21:47:11",
+        "shareCount": 0,
+        "tagList": [
+          {
+            "tagId": "1587716769488909",
+            "tagName": "户外徒步"
+          },
+          {
+            "tagId": "1595890008872968",
+            "tagName": "小狗日记"
+          },
+          {
+            "tagId": "1769368495335566",
+            "tagName": "目涯巫山"
+          },
+          {
+            "tagId": "1609372259318855",
+            "tagName": "巫山"
+          }
+        ],
+        "videoId": "7696519676629475314",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_9c2720960b67108e15db03c54f854799.jpeg?from=327834062",
+        "authorFansCount": 13295,
+        "authorName": "风儿慢跑",
+        "authorSecUid": "MS4wLjABAAAApxt5l3uDQF7qlHSbB845fJB7DD0_lanRomKqAijLofoyZu-jwwUhwK6Dyl6uMf6S",
+        "authorShortId": "0",
+        "authorUid": "3333327827778765",
+        "authorUniqueId": "HF334188429",
+        "collectCount": 0,
+        "commentCount": 15,
+        "content": "“走过风花雪月的年少，行囊藏起希望与惆怅，携青春沉淀奔赴远方”#户外徒步 #小狗属于大自然",
+        "coverUrl": "https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-i-0813/ow1GAAmeAaAbAIgVP4LeBEAGdCfAQIQA7AGjBz~540x0.jpeg?lk3s=138a59ce&x-expires=1795572000&x-signature=%2FFpEuE3T5OuQn%2FE33bXv%2Bq%2FN3vo%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&biz_tag=aweme_images&l=20261111103644CB4357AE86B66A83F46B",
+        "duration": 0,
+        "imageUrlList": [],
+        "likeCount": 124,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7705661485388834531",
+        "publishTime": "2026-11-08 13:02:04",
+        "shareCount": 0,
+        "tagList": [
+          {
+            "tagId": "1587716769488909",
+            "tagName": "户外徒步"
+          },
+          {
+            "tagId": "1791661267208196",
+            "tagName": "小狗属于大自然"
+          }
+        ],
+        "videoId": "7705661485388834531",
+        "videoType": "68"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_082fc06b11496ac33afa2cd5b77d3403.jpeg?from=327834062",
+        "authorFansCount": 2007,
+        "authorName": "邓登登",
+        "authorSecUid": "MS4wLjABAAAA57pthsL2kd3bXyAYa9FIGtFBt9DLgxgbax-IRwxhWVQ",
+        "authorShortId": "0",
+        "authorUid": "70008676918",
+        "authorUniqueId": "Mitchell2019",
+        "collectCount": 0,
+        "commentCount": 0,
+        "content": "打卡小狗山，体验不一般 #小狗登顶 #长江三峡风景 #带娃打卡大好河山 #小众徒步 #小狗山",
+        "coverUrl": "https://p26-sign.douyinpic.com/tos-cn-p-0015/o0fqTj9mAODz7dPEyeFl3IdjA87pQgBqvcCCsA~noop.jpeg?lk3s=138a59ce&x-expires=1793880000&x-signature=j%2BeOYzOIhF18MP6o2O7Nm%2FsQoTM%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&biz_tag=aweme_images&l=20261022205627664F3C8C0FBDB974DAB7",
+        "duration": 0,
+        "imageUrlList": [],
+        "likeCount": 10,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7696363959657551730",
+        "publishTime": "2026-10-14 11:42:55",
+        "shareCount": 0,
+        "tagList": [
+          {
+            "tagId": "1779613972236291",
+            "tagName": "小狗登顶"
+          },
+          {
+            "tagId": "1628440949096451",
+            "tagName": "长江三峡风景"
+          },
+          {
+            "tagId": "7574732216471652390",
+            "tagName": "带娃打卡大好河山"
+          },
+          {
+            "tagId": "1670116024961031",
+            "tagName": "小众徒步"
+          },
+          {
+            "tagId": "1662653516076035",
+            "tagName": "小狗山"
+          }
+        ],
+        "videoId": "7696363959657551730",
+        "videoType": "68"
+      },
+      {
+        "authorAvatarUrl": "https://p26.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_5c4806993201408289488a84d24459c4.jpeg?from=327834062",
+        "authorFansCount": 1369,
+        "authorName": "Oreo奥～",
+        "authorSecUid": "MS4wLjABAAAAZlVRd8YadTdjY29Yzf8oM4xoEBxBnnkGXDbY1ZzqG-k",
+        "authorShortId": "624073356",
+        "authorUid": "96001254639",
+        "authorUniqueId": "",
+        "collectCount": 1,
+        "commentCount": 0,
+        "content": "第一次短程徒步～小狗们表示满意 #带狗徒步爬山 #户外遛狗日常 #宠物穿搭分享 #日常遛狗子 #不敢骗你养小狗",
+        "coverUrl": "https://p95-zjwztc-sign.douyinpic.com/tos-cn-i-0813/o0CF9ADo6HVfDANlS74jDeXEAYpFIAqbAQgAa8~noop.jpeg?lk3s=138a59ce&x-expires=1795078800&x-signature=ZZWCRD8M0XSY3A3gR2fgQ5W1MFo%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&biz_tag=aweme_images&l=20261105170604AC6E770AAE5FEA009DE0",
+        "duration": 0,
+        "imageUrlList": [],
+        "likeCount": 12,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7703776148630605481",
+        "publishTime": "2026-11-03 11:06:00",
+        "shareCount": 0,
+        "tagList": [
+          {
+            "tagId": "1791112086340683",
+            "tagName": "带狗徒步爬山"
+          },
+          {
+            "tagId": "1704876156731405",
+            "tagName": "户外遛狗日常"
+          },
+          {
+            "tagId": "1720574661876759",
+            "tagName": "宠物穿搭分享"
+          },
+          {
+            "tagId": "1624891996738564",
+            "tagName": "日常遛狗子"
+          },
+          {
+            "tagId": "7586918667403200575",
+            "tagName": "不敢骗你养小狗"
+          }
+        ],
+        "videoId": "7703776148630605481",
+        "videoType": "68"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_5690b092a5be3622e62715ba4cf84dc5.jpeg?from=327834062",
+        "authorFansCount": 11417,
+        "authorName": "凌云•设计ᴅᴇsɪɢɴ ᴅɪʀᴇᴄᴛᴏʀ",
+        "authorSecUid": "MS4wLjABAAAAotAd6O4iVweTJyZ367QE7CaM2uPfKetbemOvXkVhxQY",
+        "authorShortId": "0",
+        "authorUid": "7716782157",
+        "authorUniqueId": "LY808",
+        "collectCount": 3,
+        "commentCount": 9,
+        "content": "都说秋天适合思念、其实更适合见面\n#情绪音乐玩法新风向 #抖音玩法合伙人计划 #户外徒步 #小狗属于大自然 #芦苇",
+        "coverUrl": "https://p26-sign.douyinpic.com/tos-cn-i-0813c000-ce/oIqGIbbAADEeswAAiNRCfFtxtEotvQDR9ZzNiA~540x0.jpeg?lk3s=138a59ce&x-expires=1793332800&x-signature=hX2MRB58zx3GA7I%2B4yKHTVWGqDU%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=20261016122636F6BD2748007F216D2248",
+        "duration": 9134,
+        "imageUrlList": [],
+        "likeCount": 27,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7695927492729663473",
+        "publishTime": "2026-10-13 07:29:12",
+        "shareCount": 0,
+        "tagList": [
+          {
+            "tagId": "7629388728196958218",
+            "tagName": "情绪音乐玩法新风向"
+          },
+          {
+            "tagId": "7570900693196736512",
+            "tagName": "抖音玩法合伙人计划"
+          },
+          {
+            "tagId": "1587716769488909",
+            "tagName": "户外徒步"
+          },
+          {
+            "tagId": "1791661267208196",
+            "tagName": "小狗属于大自然"
+          },
+          {
+            "tagId": "1575439996088333",
+            "tagName": "芦苇"
+          }
+        ],
+        "videoId": "7695927492729663473",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/douyin-user-image-file_1ae0aaf47800afa930cfc4eb84c336d3.jpeg?from=327834062",
+        "authorFansCount": null,
+        "authorName": "一只李卤蛋",
+        "authorSecUid": "MS4wLjABAAAAKVUenTTaVnFJQDNuVpRgWZDEJeEnz9obK8LxdlCGTB0ouhbJMX-tAWlYZj6JA_mh",
+        "authorShortId": null,
+        "authorUid": "7672326661367874617",
+        "authorUniqueId": null,
+        "collectCount": 1,
+        "commentCount": 0,
+        "content": "Hiking Vlog | 和小狗秋天的第一场徒步 小狗真的很适合在没人的地方肆意奔跑~ #带狗徒步 #养宠日常 #徒步 ##萌宠出镜计划  #抖音精选",
+        "coverUrl": "https://p11-sign.douyinpic.com/tos-cn-i-dy/58a997038c4547208888e567b517ebdb~noop.webp?lk3s=138a59ce&x-expires=1794988800&x-signature=p7tyN0LRHXfaiy%2BHSseUnkTNWdQ%3D&from=327834062_large&s=PackSourceEnum_CHALLENGE_AWEME&se=false&sc=cover&biz_tag=aweme_video&l=20261104165813CBA97D9E06681B66387E",
+        "duration": 192401,
+        "imageUrlList": [],
+        "likeCount": 13,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7696447012769795337",
+        "publishTime": "2026-10-14 17:05:16",
+        "shareCount": 2,
+        "tagList": [
+          {
+            "tagId": "1568943621383170",
+            "tagName": "抖音精选"
+          },
+          {
+            "tagId": "1674546112412680",
+            "tagName": "带狗徒步"
+          },
+          {
+            "tagId": "1623716968616968",
+            "tagName": "养宠日常"
+          },
+          {
+            "tagId": "1563742837226497",
+            "tagName": "徒步"
+          },
+          {
+            "tagId": "7477064918303246374",
+            "tagName": "萌宠出镜计划"
+          }
+        ],
+        "videoId": "7696447012769795337",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme-avatar/tos-cn-avt-0015_d89639a395e703da3b9abde5b076e7e3~tplv-dy-shrink:96:96.jpeg?from=327834062",
+        "authorFansCount": null,
+        "authorName": "KK",
+        "authorSecUid": "MS4wLjABAAAA3fEsP1mtB17OUm9zSz6XjXMwr5CST_EY8pS-I4gWPyo",
+        "authorShortId": null,
+        "authorUid": "95301266980",
+        "authorUniqueId": null,
+        "collectCount": 0,
+        "commentCount": 2,
+        "content": "大二普营地   人少景美 #勇敢的小狗先享受世界 #川西旷野 #川西秋日徒步 #小狗天生就属于户外 #边牧最开心的时候莫过于奔跑",
+        "coverUrl": "https://p11-sign.douyinpic.com/tos-cn-i-0813/o8AArLOfVqPXGhgA2ekI4eD2AMIfCOAgoritQM~tplv-dy-resize-walign-adapt-aq:360:q75.jpeg?lk3s=138a59ce&x-expires=1795104000&x-signature=AgKQHEmdzPbNsYMyn2ybDEqaw4Y%3D&from=327834062&s=PackSourceEnum_MUSIC_AWEME&se=false&sc=cover&biz_tag=aweme_video&l=20261106001550CACBC7D2A0E7A4352140",
+        "duration": 34467,
+        "imageUrlList": [],
+        "likeCount": 42,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7704217907697926374",
+        "publishTime": "2026-11-04 15:40:16",
+        "shareCount": 9,
+        "tagList": [
+          {
+            "tagId": "7578520823942629414",
+            "tagName": "边牧最开心的时候莫过于奔跑"
+          },
+          {
+            "tagId": "1777846664507392",
+            "tagName": "勇敢的小狗先享受世界"
+          },
+          {
+            "tagId": "7519096095180326948",
+            "tagName": "川西旷野"
+          },
+          {
+            "tagId": "7552838710014789641",
+            "tagName": "川西秋日徒步"
+          },
+          {
+            "tagId": "7506128236976277543",
+            "tagName": "小狗天生就属于户外"
+          }
+        ],
+        "videoId": "7704217907697926374",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813c000-ce_ool5xiRzArbqmB2BISaiPvMLEA5AoANCsAPAV.jpeg?from=327834062",
+        "authorFansCount": 15558,
+        "authorName": "周芷强｜峨眉山徒步向导工作室",
+        "authorSecUid": "MS4wLjABAAAAKPOcD0J9GcnSP73ba5prHr9QjbyLzVkLUG2iFKi1cSfbffqwmuKJjyjwgFTldYfP",
+        "authorShortId": "0",
+        "authorUid": "2465582503705107",
+        "authorUniqueId": "L12y86",
+        "collectCount": 8,
+        "commentCount": 16,
+        "content": "第一次带小狗爬峨眉山 我们今天走南线哦 今天带billy 和她的好朋友一起爬峨眉山#峨眉山 #峨眉山徒步 #小狗登顶#小狗登顶",
+        "coverUrl": "https://p3-sign.douyinpic.com/tos-cn-i-0813c000-ce/ogA7PXaBiwccobAUAAdAdzxE4hzvDtiKpMI2c~540x0.jpeg?lk3s=138a59ce&x-expires=1794358800&x-signature=EgrX%2B8EOX4KRqE87h9sQ7Tm2wF0%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=20261028091826BF851056DC84F2C5DB3E",
+        "duration": 515227,
+        "imageUrlList": [],
+        "likeCount": 132,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7698736313596605817",
+        "publishTime": "2026-10-20 21:08:51",
+        "shareCount": 4,
+        "tagList": [
+          {
+            "tagId": "1580570155858957",
+            "tagName": "峨眉山"
+          },
+          {
+            "tagId": "1608192435982349",
+            "tagName": "峨眉山徒步"
+          },
+          {
+            "tagId": "1779613972236291",
+            "tagName": "小狗登顶"
+          }
+        ],
+        "videoId": "7698736313596605817",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_ef17f7d8c89d2b3b9be22ac446a6af3a.jpeg?from=327834062",
+        "authorFansCount": 270,
+        "authorName": "一只大胖雪",
+        "authorSecUid": "MS4wLjABAAAAY23RdkHaR6tOz5Dva7yx5NV9lOnt4zBwvzNMVoe-PLQnQ-JMhMUlRtptAyZNOfgM",
+        "authorShortId": "0",
+        "authorUid": "3465269373317677",
+        "authorUniqueId": "Sugar2324",
+        "collectCount": 14,
+        "commentCount": 17,
+        "content": "秋日徒步第8弹 -玉峰山神龙谷⛰️ 刺激！峡谷穿越和45°长下坡，直接从白天走到黑夜🤨#徒步 #重庆徒步 #小狗 #记录真实生活 #vlog十亿流量扶持计划",
+        "coverUrl": "https://p26-sign.douyinpic.com/tos-cn-i-0813c001/o0WtovAPEViOw5WAIAn5wKigBAAI8bLADIaUl~noop.webp?lk3s=138a59ce&x-expires=1795550400&x-signature=OrLh9Dv0Sz9tII%2BVPwXHEK95Xv4%3D&from=327834062_large&s=PackSourceEnum_CHALLENGE_AWEME&se=false&sc=cover&biz_tag=aweme_video&l=20261111041139B0E8C115C0CD97AF0AD7",
+        "duration": 266467,
+        "imageUrlList": [],
+        "likeCount": 52,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7698594615628982938",
+        "publishTime": "2026-10-20 11:59:00",
+        "shareCount": 19,
+        "tagList": [
+          {
+            "tagId": "1563742837226497",
+            "tagName": "徒步"
+          },
+          {
+            "tagId": "1693678299998215",
+            "tagName": "重庆徒步"
+          },
+          {
+            "tagId": "1573141556907021",
+            "tagName": "小狗"
+          },
+          {
+            "tagId": "1610220985271326",
+            "tagName": "记录真实生活"
+          },
+          {
+            "tagId": "1631751653335043",
+            "tagName": "vlog十亿流量扶持计划"
+          }
+        ],
+        "videoId": "7698594615628982938",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813c001_okEBcFVfZEAaBoDrIfEKAEAAEhzZ4OkKaCeA74.jpeg?from=327834062",
+        "authorFansCount": 11800,
+        "authorName": "山野行迹",
+        "authorSecUid": "MS4wLjABAAAAgdXMcg7fwc_5_z75hj52FqD7YNH8Uu2SNzFMmFqwr0M",
+        "authorShortId": "0",
+        "authorUid": "64820202217",
+        "authorUniqueId": "cyddz888",
+        "collectCount": 0,
+        "commentCount": 0,
+        "content": "我家社牛徒步小狗又交到新朋友啦🐶 算了算了 都不容易 追不上就算了！#带狗徒步爬山 #带狗徒步 #带狗爬山 #带上狗狗去徒步 #带狗子徒步",
+        "coverUrl": "https://p9-sign.douyinpic.com/tos-cn-i-0813c001/ogD9DEg7EAqAJkASICjArCFAH4aBVAf1esAOUj~540x0.jpeg?lk3s=138a59ce&x-expires=1794855600&x-signature=f0c0VeamfESLAwR%2B%2B4UAEc4J3f8%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=20261103030343A173A5C26E4C4347FBA7",
+        "duration": 100134,
+        "imageUrlList": [],
+        "likeCount": 6,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7702093416276507555",
+        "publishTime": "2026-10-29 22:16:08",
+        "shareCount": 1,
+        "tagList": [
+          {
+            "tagId": "1791112086340683",
+            "tagName": "带狗徒步爬山"
+          },
+          {
+            "tagId": "1674546112412680",
+            "tagName": "带狗徒步"
+          },
+          {
+            "tagId": "1597889875292167",
+            "tagName": "带狗爬山"
+          },
+          {
+            "tagId": "1695623564384267",
+            "tagName": "带上狗狗去徒步"
+          },
+          {
+            "tagId": "1708161892606024",
+            "tagName": "带狗子徒步"
+          }
+        ],
+        "videoId": "7702093416276507555",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_81cf68414d4f2b0dbc0226c1d6bd6521.jpeg?from=327834062",
+        "authorFansCount": 2362,
+        "authorName": "安心吖～",
+        "authorSecUid": "MS4wLjABAAAAPnBqaHcwvaK5bi8_Xr8fzJk6ounXj_hbqw3tXh8yiHs",
+        "authorShortId": "0",
+        "authorUid": "73690466704",
+        "authorUniqueId": "Snn2069",
+        "collectCount": 0,
+        "commentCount": 40,
+        "content": "#吃喝玩乐分享计划 #山野徒步登山 #徒步小狗 我朋友说：你车给我开去瑞安一趟 我说：可以，不过我车有行车轨迹和定位 他说：那不开了～ 我想问问，他这是几个意思？？？",
+        "coverUrl": "https://p9-sign.douyinpic.com/tos-cn-p-0015c000-ce/os5TR8w6fAIQfGXGBD9q52BsgEEnFAOPIccQ1s~c5_300x400.jpeg?lk3s=138a59ce&x-expires=1795348800&x-signature=ZerYIebks7YojitSmCxm5PUFPms%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=20261108205421F31C409B99739182592F",
+        "duration": 34800,
+        "imageUrlList": [],
+        "likeCount": 57,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7703901609340358833",
+        "publishTime": "2026-11-03 19:12:50",
+        "shareCount": 1,
+        "tagList": [
+          {
+            "tagId": "7574800450533197876",
+            "tagName": "吃喝玩乐分享计划"
+          },
+          {
+            "tagId": "7373935106253129763",
+            "tagName": "山野徒步登山"
+          },
+          {
+            "tagId": "1790073814935627",
+            "tagName": "徒步小狗"
+          }
+        ],
+        "videoId": "7703901609340358833",
+        "videoType": "0"
+      },
+      {
+        "authorAvatarUrl": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813c001_oAE57AnjZF4bfAB1ngxhGIyDAkPeIBLCBQAAfJ.jpeg?from=327834062",
+        "authorFansCount": 32596,
+        "authorName": "40岁如花(徒步 中国乡村)",
+        "authorSecUid": "MS4wLjABAAAA0NwbLZQTxkFQLwSBqlbnbzWk97wn4QhIj5PySpfXNJk",
+        "authorShortId": "0",
+        "authorUid": "62762170320",
+        "authorUniqueId": "www1985042588",
+        "collectCount": 10,
+        "commentCount": 8,
+        "content": "10 月 22 日｜遵义徒步东达山，驻守第 162 天 \n10 月 22 日。我从贵州遵义徒步来到东达山，驻守第 162 天，小花陪伴 36 天。花花生下小狗第六天，如今仅剩这一个小生命。高原记录之路不易，感谢每一位大哥大姐，一起共创互联网美好。 \n#东达山驻守 #高原徒步 #小狗纪实",
+        "coverUrl": "https://p9-sign.douyinpic.com/tos-cn-i-0813/o8DDECiBA3fA42UAw1OZANZIaAiHgeAbgSCNNg~540x0.jpeg?lk3s=138a59ce&x-expires=1794517200&x-signature=suAFMxFluc9UBNlV3z4pvGlhSyc%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=202610300559410CE27EAB26E097447288",
+        "duration": 76464,
+        "imageUrlList": [],
+        "likeCount": 118,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7699397959947145307",
+        "publishTime": "2026-10-22 15:56:23",
+        "shareCount": 1,
+        "tagList": [
+          {
+            "tagId": "7666266852166731791",
+            "tagName": "东达山驻守"
+          },
+          {
+            "tagId": "1636580425732109",
+            "tagName": "高原徒步"
+          }
+        ],
+        "videoId": "7699397959947145307",
+        "videoType": "4"
+      },
+      {
+        "authorAvatarUrl": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813c001_oAE57AnjZF4bfAB1ngxhGIyDAkPeIBLCBQAAfJ.jpeg?from=327834062",
+        "authorFansCount": 32670,
+        "authorName": "40岁如花(徒步 中国乡村)",
+        "authorSecUid": "MS4wLjABAAAA0NwbLZQTxkFQLwSBqlbnbzWk97wn4QhIj5PySpfXNJk",
+        "authorShortId": "0",
+        "authorUid": "62762170320",
+        "authorUniqueId": "www1985042588",
+        "collectCount": 11,
+        "commentCount": 19,
+        "content": "10 月 23 日｜遵义徒步东达山，驻守第 163 天 10 月 23 日。从贵州遵义徒步抵达东达山，驻守第 163 天。小花陪伴我 37 天，花花生下三只狗崽，仅剩一个小生命，今天是小狗出生第七天。今日在高原山野捡拾清理垃圾，守护这片高原，记录路上平凡日常。 \n#东达山驻守 #高原徒步 #小狗纪实",
+        "coverUrl": "https://p3-sign.douyinpic.com/tos-cn-i-0813c001/oEA9Ei6TwtIbACBgJgrabHPAABQsDWCJAIivV~540x0.jpeg?lk3s=138a59ce&x-expires=1794603600&x-signature=EZ6vXOaLCdvg8KnYQBZ4h%2FWNnzE%3D&from=327834062_large&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=aweme_video&l=20261031055111854AE41A5662B3D36BA1",
+        "duration": 382600,
+        "imageUrlList": [],
+        "likeCount": 135,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7699758923528513947",
+        "publishTime": "2026-10-23 15:17:06",
+        "shareCount": 4,
+        "tagList": [
+          {
+            "tagId": "7666266852166731791",
+            "tagName": "东达山驻守"
+          },
+          {
+            "tagId": "1636580425732109",
+            "tagName": "高原徒步"
+          }
+        ],
+        "videoId": "7699758923528513947",
+        "videoType": "4"
+      },
+      {
+        "authorAvatarUrl": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_0c73adfcbfc915e1ac5b3efadfb8fb9c.jpeg?from=327834062",
+        "authorFansCount": null,
+        "authorName": "徒步小狗边梦龙",
+        "authorSecUid": "MS4wLjABAAAA5yYbLmJt4YoFuNHrypA-6WriSOiEtXNXotECYXnt8cQ",
+        "authorShortId": null,
+        "authorUid": "240115152861843",
+        "authorUniqueId": null,
+        "collectCount": 12,
+        "commentCount": 65,
+        "content": "顺朝最后十公里 偶遇小狐狸 #爱护小动物 #徒步 #路上拍到的小狐狸 #五台山顺朝 #朝台",
+        "coverUrl": "https://p11-sign.douyinpic.com/tos-cn-p-0015c000-ce/oMB2Pi5COIBa5iNAwe7fXwV7QrrACewIW1EwAE~noop.webp?lk3s=138a59ce&x-expires=1794891600&x-signature=YsoWG4fTJ4tUJfGRdP3ZYuX7NTU%3D&from=327834062_large&s=PackSourceEnum_CHALLENGE_AWEME&se=false&sc=cover&biz_tag=aweme_video&l=20261103132400B2B5313CEACA0B48D004",
+        "duration": 230736,
+        "imageUrlList": [],
+        "likeCount": 331,
+        "opusUrl": "https://www.iesdouyin.com/share/video/7698349127646357674",
+        "publishTime": "2026-10-19 20:06:23",
+        "shareCount": 107,
+        "tagList": [
+          {
+            "tagId": "1599276783593475",
+            "tagName": "朝台"
+          },
+          {
+            "tagId": "7419052041953085476",
+            "tagName": "爱护小动物"
+          },
+          {
+            "tagId": "1563742837226497",
+            "tagName": "徒步"
+          },
+          {
+            "tagId": "1723846578444292",
+            "tagName": "路上拍到的小狐狸"
+          },
+          {
+            "tagId": "1736253157471236",
+            "tagName": "五台山顺朝"
+          }
+        ],
+        "videoId": "7698349127646357674",
+        "videoType": "0"
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 40,
+    "total": 18
+  },
+  "msg": "成功"
+}

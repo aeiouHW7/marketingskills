@@ -20,6 +20,7 @@ Current versions of all skills. Agents can compare against local versions to che
 | conversion-tracking | 1.0.6 | 2026-11-09 |
 | copy-editing | 2.2.4 | 2026-11-09 |
 | copywriting | 2.3.6 | 2026-11-17 |
+| creator-benchmarking | 1.0.0 | 2026-11-21 |
 | cro | 2.0.6 | 2026-11-09 |
 | customer-research | 2.0.8 | 2026-11-09 |
 | directory-submissions | 2.2.1 | 2026-11-19 |

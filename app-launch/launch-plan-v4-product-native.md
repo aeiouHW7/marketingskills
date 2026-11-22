@@ -300,7 +300,7 @@
 
 | 项目 | 金额 | 时点 | 说明 |
 |------|------|------|------|
-| UGC 素人采购 | 100-300 美元/月 | W1 起持续 | 只买自己拍不出来的场景，2-4 条/月；**走 Collabstr/JoinBrands 平台下单**（见 10.6），钱托管防跑单 |
+| UGC 素人采购 | 100-300 美元/月 | W1 起持续 | 只买自己拍不出来的场景，2-4 条/月；**走 Collabstr 平台下单**（实操见 10.7），钱托管防跑单 |
 | Spark Ads 试投 | 500-1000 美元（一次性） | W4 | 只加热自然播放过 5 万的帖子；1 月买量决策后再定月度预算 |
 | AI 工具订阅 | 约 30-50 美元/月 | 即日起 | ElevenLabs 配音 + Canva Pro（其他用免费额度） |
 | 落地页域名+托管 | 约 10-20 美元/月 | 即日起 | 收邮箱用 |
@@ -378,6 +378,67 @@
 3. 挑达人只看作品不用多说：看 TA 拍过什么、互动率多少，下单后用站内模板发 brief，全程不用打电话
 
 **首月动作（并入预算表第 1 行）**：Collabstr 免费版下 2-3 单（100-200 美元/条，买"认证对决"类素材）+ viral.app 开试用跑效果付费线；两条线哪条来的安装便宜，12 月就加码哪条。
+
+### 10.7 Collabstr 实操手册（已定为达人合作主力平台，照着做就行）
+
+> 定位：达人采购主渠道——按单付、资金托管、纠纷平台管。**免费版够用**，不要先买 Pro（299 美元/月，等月单量 10+ 再升，那时省下的手续费才划算）。
+
+**① 注册（5 分钟）**：collabstr.com → "Sign up free" → 选 I'm a brand → 免费版即可，不用绑卡（下单时才付钱）。
+
+**② 怎么找达人（重点：搜"拍过同类内容的人"，不搜"粉丝多的人"）**：
+1. 搜索框搜关键词：**couples challenge / couple goals / studytok / 75 hard / accountability partner**（都是你产品题材的近邻）
+2. 筛选器设置：平台选 TikTok（首发阵地）→ 粉丝 1K-50K（nano/micro，便宜且真实感强）→ 地区 US / CA / AU / UK（你的市场）
+3. **三查再下单**：①互动率 >3%（赞评÷粉丝数，平台页面直接看）②历史合作订单数和评分高 ③最近一条赞助内容评论区不是整齐划一的水军
+4. 一次列 5-10 个候选，别急着下单，先都收藏
+
+**③ 下单流程（钱由平台托管，达人交不出片子全退）**：
+1. 点进达人主页 → 选 TA 预设的内容套餐（package），或 "Custom Offer" 自己写价格和要求
+2. **下单前在站内先发消息确认两件事**（英文模板见下）：交付时间 + 是否接受你的 brief——避免拍完不符要求扯皮
+3. 付款进平台托管 → 达人交付 → 你在后台验收 → 点 approve 放款；不满意可以要求修改一轮（brief 里提前写好"1 round of revisions"）
+
+**④ Brief 英文模板（直接复制粘贴，把 [ ] 里换成你的内容）**：
+
+```
+Hi [name]! Love your [couples challenge] content — that's exactly the vibe we want.
+
+We make [Tugduo], a mobile app where couples & friends compete on daily habits:
+you log your tasks, but they only count if your partner APPROVES them (no
+appeals!), and whoever has more points at the end of the season wins.
+
+What we'd like: one 30-60s TikTok video in YOUR usual style, showing you and
+your partner trying it for a day. The funny part is the drama of getting a
+task rejected.
+
+Must include:
+- Tasks only count when your partner approves them
+- "Who won? lmk" — ask viewers to guess who won in the comments
+- End card: comment "APP" and I'll DM the link
+
+Disclosure: please use TikTok's paid partnership label + #ad (required).
+You have full creative freedom — no script from us. 1 round of revisions
+included. Looking forward to it!
+```
+
+**⑤ 站内沟通英文短句模板（下单前确认用）**：
+
+| 你要确认什么 | 复制这句 |
+|------|---------|
+| 问交期 | Hi! Can you deliver within 5 days of accepting the order? |
+| 确认拍这个方向 | Are you comfortable filming a couple's challenge video about a habit-tracking app? Full creative freedom, brief provided. |
+| 买素材使用权 | Can we also get rights to use the video in our own paid ads? (happy to pay extra) |
+| 验收改稿 | Looks great! Just one small change: [把中文丢给 Claude 翻译]. Everything else is approved. |
+
+**⑥ 达人追踪表（Google Sheet 五列就够）**：达人名 / 主页链接 / 订单链接 / 花费 / 专属邀请码（如 maya20）+ 带来的安装数。邀请码在 app 上线前配好，没有追踪的分成=扯皮地狱（10.2 条款）。
+
+**⑦ 试单→放量节奏**：
+- 首月：2-3 单 × 100-200 美元，全买"认证对决"题材（你的内容王牌）——验收标准只有一条：评论区有没有人问 "what app is this"
+- 12 月：表现最好的达人复购 2-3 单（老熟人二次合作 usually 效果更好，TA 的观众见过你的产品了）；升级混合分成（10.2 模式③）
+- 1 月起：月单量 ≥10 时升 Collabstr Pro（手续费 10%→5%）+ 开 viral.app 效果付费线对冲
+
+**⑧ 三个坑提前避开**：
+1. 素材使用权不是默认的——下单时就要谈（模板第三句），写成 brief 里的明条款
+2. #ad 披露必须写进 brief（模板里已含）——FTC 追责追到品牌方（10.3）
+3. 别用 Collabstr 的 campaign 功能免费版发不出去，Pro 才有；前期逐个下单效率更高，还能针对性挑人
 
 ## 十一、指标（按产品漏斗定标准，比通用留存更准）
 

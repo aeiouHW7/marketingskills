@@ -19,6 +19,8 @@
 # 一、A 对决号（周 6 条：脚本 A1-A6）
 
 > 人设："他打卡必须经我批准"——第三人称演两个人较劲，全程不露脸。
+> **⚠️ 人设统一性三铁律（营销负责人定，与 B 号同理但结构不同）**：A 号人物是一对固定情侣——
+> ①**我 = 她（严格的审批方）+ 他 = 男朋友（爱耍小聪明的申报方）**，性别和角色永不互换；②**视角可以轮换**（现实里互相审批：我也申报任务被他批，A6 文案池里 "he rejected my..." 就属于这类），但人物永远是同一对，且结果必须能互相衔接；③**比分必须连续**——建一张"赛季主表"（当前比分/天数/连胜数），每条内容从主表取数、发布后把赢家+得分回写主表（比分只增不减、分差≤10）。A 号与 D 号可以是同一对人物宇宙（他=创始人、我=搭档），互为导流。
 > 铁律对照：钩子只写较劲瞬间不提 app ✅ / 结尾统一 "Who won? lmk" ✅ / 编号系列化 ✅
 
 ---
@@ -72,8 +74,8 @@
 
 | 卡 | 内容 |
 |----|------|
-| 卡1·钩子 | **"she claimed 'studied 2 hours'… we checked 📱"**（她申报"学习了2小时"……我们查了手机） |
-| 卡2·请求截图 | `Task: Study — 2 hrs / Claimed by: her / Status: Pending` |
+| 卡1·钩子 | **"he claimed 'studied 2 hours'… we checked 📱"**（他申报"学习了2小时"……我们查了手机） |
+| 卡2·请求截图 | `Task: Study — 2 hrs / Claimed by: him / Status: Pending` |
 | 卡3·证据 | 配文 **"screen time says otherwise:"**（屏幕使用时间不这么认为：）+ 留位放手机屏幕时间截图（TikTok 1h47m 那种） |
 | 卡4·审判 | **"REJECTED ❌ 13 minutes of actual studying"**（实际学习13分钟）+ 比分 |
 | 卡5·CTA | **"who won? lmk 👇"** + comment "APP" |
@@ -109,7 +111,7 @@
 
 | 卡 | 内容（气泡对话，左他右我） |
 |----|------|
-| 卡1·钩子 | **"she said my reading doesn't count 💀"**（她说我读的书不算任务💀） |
+| 卡1·钩子 | **"my boyfriend logged manga as reading 💀"**（我男朋友把漫画申报成阅读💀） |
 | 卡2 | 他：`logged 'reading 30 min' ✅`（申报阅读30分钟）／ 我：`what were you reading`（你读的啥） |
 | 卡3 | 他：`manga`（漫画）／ 我：`manga is not reading 😌`（漫画不算阅读） |
 | 卡4 | 他：`IT HAS WORDS??`（它有字啊？？）／ 我：`REJECTED. no appeal. 😌`（驳回。不许申诉。） |
@@ -130,7 +132,7 @@
 **模板**：连胜大数字 + 双方头像 + 一句嘴硬文案。**文案池轮换**（每周换 2 句）：
 1. `day 47 — he's catching up and I hate it 😤`（第47天——他要追上了，我烦死了）
 2. `streak: 23. his excuse streak: also 23`（连胜23天。他找借口的连胜也是23天）
-3. `she approved my task. first time ever. screenshotting this`（她批了我的任务。史上首次。截图留念）
+3. `he approved my task. first time ever. screenshotting this`（他批了我的任务。史上首次。截图留念）
 4. `day 52 — the season ends friday and we're 8 points apart`（第52天——赛季周五结束，我们差8分）
 5. `he rejected my 'walked 10k steps' again. the steps were real!!`（他又驳回了我的"走了1万步"。步是真的！！）
 6. `day 30. neither of us has blinked since monday`（第30天。从周一起我们俩眼睛都没眨过——谁都不敢断）

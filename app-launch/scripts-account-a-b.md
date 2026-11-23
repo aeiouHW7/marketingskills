@@ -144,6 +144,9 @@
 
 > 人设："第 X 天挑战日记"——连载感，吃期末季池（185 万）+ 75hard 池 + 学习 tag 池。
 > GA 周（12/1 前后）撞美国大学期末，**B1 学习线是 W1-W3 的优先级**。
+>
+> **⚠️ 人设统一性三铁律（营销负责人定）**：B 号是一部剧，不是题材合集——
+> ①**叙事者永远只有一个"我"**（同一个虚拟人物，绝不换人）；②**对手称呼永远用 "my roommate"**（全部脚本统一，B2/B3 已同步修正）；③**赛季编号和比分数字连续**（Season 1、me 218 · her 231，数字逐日递增不重置）。题材可以混（学习/健身/习惯——赛季任务本来多类别，这是产品机制支撑的混法），但**视角和人物绝不换**。观众追的是这个人的故事，不是题材本身。W3 数据后若某垂类明显跑赢，再复制新号做纯垂直（4.1 扩张期规则）
 
 ---
 
@@ -177,8 +180,8 @@
 
 | 卡 | 内容 |
 |----|------|
-| 卡1·钩子 | **"day 5 of competing with my best friend"**（和好朋友比赛的第5天） |
-| 卡2·Day 封面 | **"DAY 5 · 75 DAYS LEFT"**（第5天·还剩75天）+ 赛季名 `Season 1: Bestie Bowl` |
+| 卡1·钩子 | **"day 5 of competing with my roommate"**（和室友比赛的第5天） |
+| 卡2·Day 封面 | **"DAY 5 · 75 DAYS LEFT"**（第5天·还剩75天）+ 赛季名 `Season 1: Roommate Rumble` |
 | 卡3·我的今日 | `✅ gym 40 min / ✅ 3L water / ⬜ 10k steps (it's raining??)`（健身40分 / 3升水 / 一万步——下雨也算吗？） |
 | 卡4·对手今日 | **"her day 5: done by 7am. ALL of it."**（她第5天：早7点全部完成） |
 | 卡5·比分 | `me 89 · her 102` + 小字 "she rejected my 'home workout' — said yoga pants ≠ workout"（她驳回我的"居家健身"——说穿瑜伽裤不算健身） |
@@ -186,7 +189,7 @@
 
 **置顶评论**：`if I do squats while watching netflix does that count`（边看奈飞边做深蹲算不算）
 **争议点**：居家健身/碎片运动算不算数
-**标签**：#75hard #gymtok #fitnesschallenge #bestiechallenge
+**标签**：#75hard #gymtok #fitnesschallenge #roommategains
 
 ---
 
@@ -197,12 +200,12 @@
 | 卡 | 内容 |
 |----|------|
 | 卡1·钩子 | **"we compete on daily habits. it's getting toxic 😭"**（我们比每日习惯，越来越"疯魔"了） |
-| 卡2·周报 | 本周比分条 `week 3: me 27 · him 25` |
-| 卡3·本周最惨 | **"worst rejection this week:"**（本周最惨驳回：）`he claimed 'woke up before 8' — proof was him squinting at the clock. REJECTED.`（他申报"8点前起床"——证据是他眯眼看闹钟的照片。驳回。） |
+| 卡2·周报 | 本周比分条 `week 3: me 27 · her 25` |
+| 卡3·本周最惨 | **"worst rejection this week:"**（本周最惨驳回：）`she claimed 'woke up before 8' — proof was her squinting at the clock. REJECTED.`（她申报"8点前起床"——证据是她眯眼看闹钟的照片。驳回。） |
 | 卡4·下周赌注 | **"this week's bet: loser does laundry for a week"**（本周赌注：输的洗一周衣服） |
 | 卡5·CTA | **"what should next week's punishment be? lmk 👇"**（下周惩罚该罚什么？评论区出主意） |
 
-**置顶评论**：`he rejected my meditation because I 'looked stressed'`（他驳回我的冥想打卡，理由是"看起来还是很焦虑"）
+**置顶评论**：`she rejected my meditation because I 'looked stressed'`（她驳回我的冥想打卡，理由是"看起来还是很焦虑"）
 **争议点**：惩罚 suggestions 评论区会出一堆馊主意（免费互动）
 **标签**：#dailyhabits #accountability #couplechallenge #selfimprovement
 
@@ -221,7 +224,7 @@
 | 8-12 | 切到赛季积分页 → 比分特写 | "she's up by 13 points" |
 | 12-15 | 定格比分 + CTA | **"who won? lmk 👇"** |
 
-**配音稿**（ElevenLabs，约 12 秒）：
+**配音稿**（ElevenLabs，约 12 秒，对手已是 roommate ✅）：
 > "Day twelve of competing with my roommate. She approved my task at eleven fifty-eight PM. She's winning by thirteen points. Who won? Let me know."
 > （和室友比赛第12天。她晚上11点58分才批我的任务。她领先13分。谁赢了？评论区说。）
 

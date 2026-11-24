@@ -34,13 +34,13 @@
 3. **但必须承认一个风险**：UGA（12/3）、UF（12/5）、UCLA（12/7）的学生此时已经在考了——**所以内容里绝不出现具体日期或校名**，倒计时是"我自己的日历"，观众各按自己的校历代入情绪（这是通用的，不是事实陈述）
 4. **叙事从"中段"改成"第一集"**：GA 周涌进来的新观众没见过前面的内容，"我们把它变成了比赛"是没头没尾的中段剧情；而"零准备 + 向学霸室友宣战"是自带前因后果的**起源篇**，路人一次看懂，这是 GA 周最该发的结构
 
-**辩证分析（新叙事的一个必须处理的问题）**：
-"带我进步"这个说法会**削弱对抗张力**——如果室友变成了辅导老师，比赛就不好看了。处理方法：**表面求进步，实际死要面子**——宣战的理由是"我需要有人盯着我"，但执行上必须是"她审批、她不给面子、分高者胜"。观众看出的是较劲，不是师徒。这是全篇的喜剧引擎，脚本里用"她审批我的每个任务 / 不许申诉"来实现。
+**辩证分析（叙事口径已按 2026-11-23 最终确认）**：
+**不做"她带我进步"这一层**——室友一旦是辅导老师，比赛就变成补课，张力全没。定稿口径就是**宣战**：零准备的我，主动向全 A 室友挑战一个 14 天赛季，理由只有一个——**我不服她**。执行机制全是硬的：她审批我申报的每个任务、驳回不许申诉、赛季末分高者胜。观众看到的必须是较劲，不是师徒。
 
-**比分口径调整（重要，与周包母本不同）**：起源篇如果还写 `me 231 · her 244`，新观众会觉得是造假的中段数字。改为 **Season 1 从今天开始计分，她带 +13 分让子**（她十月就开始复习）：
-- 视觉更干净：`her 13 · me 0`
-- 张力不减：落后 13 分就是"她十月的努力 vs 我 14 天的挣扎"
-- 后续四篇沿用这个新基线递增（V-M2 起同步改，不再用 231/244 系）
+**比分口径（定稿）**：Season 1 从今天开始计分，**她带 +13 分让子**（她十月就开始复习）：
+- 视觉干净：`her 13 · me 0`
+- 张力成立：她十月的努力 vs 我 14 天的挣扎
+- V-M2~V-M5 沿用这条新基线递增，弃用 231/244 系
 
 ---
 
@@ -48,9 +48,19 @@
 
 **18 秒 ｜ 4 镜头 ｜ 竖屏 1080×1920 ｜ 无真人露脸（只有手） ｜ ElevenLabs 配音 ｜ BGM 低调 phonk 20%**
 
-**配音稿**（约 16 秒，冷静嘴硬、略带自嘲的年轻声）：
-> "Fourteen days until finals. I have done nothing. So I challenged my roommate — the straight-A one — to a season. She approves every task I claim. No appeals. She gets a thirteen-point head start. I get fourteen days. Who's cooked? Let me know."
-> （距期末 14 天。我什么都没做。所以我向室友宣战——就是那个全 A 的——打一个赛季。我申报的每个任务都要她审批。不许申诉。她带 13 分让子。我只有 14 天。我完了吗？评论区说。）
+### 前 3 秒钩子（三条候选，推荐第 1 条）
+
+| # | 钩子文案 | 为什么会钩住人 | 适用 |
+|---|---------|---------------|------|
+| **①（推荐）** | **"I gave my straight-A roommate the power to reject my homework."**（我把驳回我作业的权力，交给了我那个全 A 室友） | 一句话包含**反常识 + 后果预告 + 冲突**；观众立刻想知道"她真驳了？"——而且这是你产品的独有机制，别的账号抄不了 | 主发，GA 周首条 |
+| ② | "My roommate started reviewing for finals in October. I started today."（她十月开始复习期末，我今天开始） | 纯差距羞辱，学生党一秒共鸣（拖延者自我代入） | 冷启动/测试用 |
+| ③ | "14 days until finals and I've done literally nothing. So I declared war."（距期末14天，我一个字没看。所以我宣战了） | 认输+反转，情绪落差大 | 若①的完成度不够时替换 |
+
+> **钩子铁律（前 3 秒）**：①不提 app 名、不提"我们做了个软件"；②第一句必须含冲突或代价（"power to reject"是代价）；③画面必须有实物动作同步发生，不能只是字幕在飘——AI 生成时代，前 3 秒的"手在动"就是留人的物理钩子。
+
+**配音稿**（约 17 秒，冷静嘴硬、略带自嘲的年轻声）：
+> "I gave my straight-A roommate the power to reject my homework. Fourteen days to finals, and I've done nothing. So I challenged her to a season. Every task I claim — she approves or rejects. No appeals. She starts thirteen points up, because she's been reviewing since October. I start at zero. Who's cooked? Let me know."
+> （我把驳回我作业的权力交给了我那个全 A 室友。距期末 14 天，我一个字没看。所以我向她宣战打一个赛季。我申报的每个任务——她批或者驳。不许申诉。她开局 13 分领先，因为她十月就开始复习了。我从零开始。我完了吗？评论区说。）
 
 ### 全片统一的"手部身份证"（跨镜头一致性关键）
 
@@ -59,89 +69,43 @@
 | 我 | **深灰连帽衫袖口**（全程不换） | 无戒指 | 右手 |
 | 她 | **米白针织开衫袖口**（全程不换） | 无戒指 | 右手 |
 
-> 不露脸的前提下，**袖口就是角色身份**。这两件衣服要在整个赛季所有视频里保持一致——建议直接固定成"拍摄制服"，拍完不用洗回衣柜。
+> 不露脸的前提下，**袖口就是角色身份**。这两件衣服在整个赛季所有视频里保持一致——建议固定成"拍摄制服"。
 
 ### 本集道具清单（拍前摆好，位置写死）
 
 | 道具 | 位置 | 出现镜头 |
 |------|------|---------|
-| 摊开的笔记本（**左页全空白**——"什么都没准备"的视觉证据） | 桌面左半区中央 | 1, 3, 4 |
-| 折好的纸条（宣战书，字迹拍不到） | 桌面中央 | 2 |
-| 红色签字笔 | 桌面右侧 | 3 |
-| 黑色笔 | 桌面左半区 | 4 |
-| 手机（屏幕朝上，不显示可读内容） | 桌面右下角 | 4 |
+| 折好的纸条（宣战书/规则书，字迹拍不清） | 桌面中央 | 1 |
+| 摊开的笔记本（**两页全空白**——"什么都没准备"的铁证） | 桌面左半区 | 2 |
+| 红色签字笔（她的审判工具） | 桌面右侧 | 3 |
+| 黑色笔 + 手机（屏幕朝上、无可读内容） | 左半区 / 右下角 | 4 |
 | 台灯、水杯（场景固定件，位置不动） | 见基准照 | 全部 |
 
 ---
 
-### 逐镜头
+### 逐镜头脚本
 
-| 镜头 | 时长 | 首帧 | 画面动作（起→止） | 屏幕大字（后期） |
-|------|------|------|------------------|----------------|
-| 1 | 0-4s | desk-overhead.jpg | 灰袖手把笔记本**空白左页**翻过来又翻回去，两页都是白的；手指在空白页上敲两下 | **"14 days until finals. I've done nothing."** |
-| 2 | 4-9s | desk-overhead.jpg | 灰袖手把折好的纸条推到桌面右侧，**米白袖手**入画拿起纸条（两双手不同时大幅动作） | **"so I challenged the straight-A roommate"** |
-| 3 | 9-14s | desk-side.jpg | 米白袖手拿红笔在我的清单行上划两道**叉**，笔尖按得重；灰袖手在旁把纸压平（被驳回的无力感） | **"her approval or it doesn't count. no appeals."** |
-| 4 | 14-18s | desk-lowangle.jpg | 灰袖手用黑笔在纸上写 "13 : 0"，写完笔尖点两下纸，手机屏亮起 | **"she starts +13. I get 14 days. who's cooked? lmk 👇"** |
+| 镜头 | 时长 | 首帧 | 画面动作（起→止） | 屏幕大字（后期） | 配音对齐 |
+|------|------|------|------------------|----------------|---------|
+| **1·钩子** | 0-3s | desk-overhead.jpg | 灰袖手把折好的纸条推到桌子右侧 → **米白袖手入画一把拿走**（交接=交出权力，两手不同时动） | **"I gave my straight-A roommate the power to reject my homework."** | 第一句 |
+| **2·代价** | 3-8s | desk-overhead.jpg | 灰袖手连翻两页笔记本，**两页都是空白**；手指在空白处敲两下 | **"14 days to finals. I've done nothing."** | 第二、三句 |
+| **3·机制** | 8-13s | desk-side.jpg | 米白袖手拿红笔在我的清单行上**重重划两道叉**；灰袖手在旁把纸压平（不敢反抗） | **"she approves or rejects. no appeals."** | 第四、五句 |
+| **4·比分开局** | 13-18s | desk-lowangle.jpg | 灰袖手用黑笔写下 "13 : 0"，笔尖敲纸两下，手机屏亮起 | **"she starts +13. I start at 0. who's cooked? lmk 👇"** | 第六句至结尾 |
 
-#### Shot 1 提示词（复制粘贴用）
-
-```
-Image-to-video from the overhead desk reference photo (desk-overhead.jpg).
-LOCK: keep the wooden desk surface, wood grain, lamp position at the left, mug position, all existing objects and the warm 3200K lamp lighting EXACTLY as in the reference photo. Do not add, remove, move or restyle anything. Do not change the camera framing. Do not create any new props.
-SCENE: night study desk seen straight from above, open notebook in the left-center of frame, blank white pages.
-ACTION: a right hand wearing a dark grey hoodie cuff and no rings enters from the bottom edge, flips one blank page over and back once with the fingertips (starts page flat blank, ends page flat blank), then taps the blank page twice with the index finger and stops.
-CAMERA: locked overhead, only subtle handheld micro-shake, no pan, no zoom, no tilt.
-LOOK: realistic hand skin texture, visible knuckle wrinkles, short natural nails, soft shadow from the lamp, natural uneven light falloff toward the right edge, mild film grain.
-FORBID: no face, no second hand, no text, no handwriting, no logos, no watermark, no UI, no added objects, no brightness change.
-```
-
-#### Shot 2 提示词
-
-```
-Image-to-video from the overhead desk reference photo (desk-overhead.jpg).
-LOCK: keep desk surface, wood grain, lamp at left, mug, notebook position and warm 3200K lighting EXACTLY as in the photo. Do not redesign the scene or reframe.
-SCENE: night study desk from above; a small folded paper note rests at the center of the desk.
-ACTION: a right hand with a dark grey hoodie cuff slides the folded note to the right side of the desk with two short pushes (starts note at center, ends note at right third of frame), holds for a beat then withdraws out of the right edge; after it leaves, a right hand with a cream knit sleeve enters from the right and picks the note up (starts note flat, ends note lifted out of frame). The two hands never move at the same time.
-CAMERA: locked overhead, subtle handheld micro-shake only.
-LOOK: realistic skin texture on both hands, realistic paper friction on the wood, warm lamp key light from the left, natural falloff, mild grain.
-FORBID: no faces, no arms beyond the wrists, no simultaneous two-hand motion, no text, no legible writing, no logos, no watermark, no new objects.
-```
-
-#### Shot 3 提示词
-
-```
-Image-to-video from the side desk reference photo (desk-side.jpg).
-LOCK: keep desk surface, props, mug, lamp at left and the warm 3200K lighting EXACTLY as in the photo. Do not move the camera.
-SCENE: side view of a night study desk; an open notebook with a short blurred checklist lies in the foreground.
-ACTION: a right hand with a cream knit sleeve holds a red pen and draws two heavy crossing strokes through one checklist line (starts pen above the line, ends two strokes drawn, pen lifting slightly), pressing firmly enough that the page dimples; a second hand with a dark grey hoodie cuff rests flat on the page edge and presses it down once (starts resting, ends pressing), staying still while the red pen works.
-CAMERA: locked side view, subtle handheld micro-shake, no zoom.
-LIGHT: single warm lamp key light from the left with natural falloff, cool screen bounce absent, soft shadow under the hands.
-LOOK: realistic pen pressure denting the paper, red ink slightly bleeding into the paper fiber, realistic skin texture, mild grain.
-FORBID: no faces, no full arms, no legible text or handwriting, no logos, no watermark, no camera movement beyond micro-shake.
-```
-
-#### Shot 4 提示词
-
-```
-Image-to-video from the low-angle desk reference photo (desk-lowangle.jpg).
-LOCK: keep the flat phone, notebook, mug, lamp position and lighting EXACTLY as in the photo. Do not reframe or add objects.
-SCENE: low angle across the desk at night, the phone lying face-up at the right, screen glowing softly with no readable content.
-ACTION: a right hand with a dark grey hoodie cuff writes a short line on the paper with a black pen (starts pen on paper, ends pen lifted), then taps the pen tip on the paper twice decisively and holds still (ends static hold); the phone screen brightens softly during the taps.
-CAMERA: very slow push-in of no more than 5% over the shot, subtle handheld micro-shake.
-LIGHT: warm lamp key light from the left mixing with cool screen glow from the right as fill.
-LOOK: realistic pen pressure, natural reflections on the phone glass, quiet defiant mood, mild grain.
-FORBID: no face, no legible writing or numbers, no text, no logos, no watermark, no zoom beyond 5%.
-```
-
-> **双手镜头的止损规则**：Shot 2/3 如果重roll 两次仍有鬼畜或第三只手，改成单人版——Shot 2 只拍"灰袖手推走纸条后撤出"，Shot 3 只拍"米白袖手划叉"。剧情不损失，一致性更好拿。
+**叙事结构说明（为什么这样排）**：
+钩子（交出权力）→ 代价（零准备，14天）→ 机制（审批/不许申诉）→ 比分开局（13:0）+ CTA。四拍刚好在 18 秒内完成"冲突—处境—规则—悬念"，每一拍只讲一件事，观众不需要任何前情就能看懂。
 
 ---
+
+### 提示词
+
+> **⏸ 待脚本确认后重写**：本篇提示词将按上面 4 镜（含 Shot 1 的双手交接）重新按 LOCK / SCENE / ACTION / CAMERA / LOOK / FORBID 六级结构产出。旧版（对应上一稿脚本）已留在 git 历史。
 
 ### 后期（CapCut）
 
 | 项 | 做法 |
 |----|------|
-| 大字字幕 | 五句按镜头时间点放画面中下部（胸口位置），白色粗体+黑色描边，逐句弹入 |
+| 大字字幕 | 4 句按镜头时间点放画面中下部（胸口位置），白色粗体+黑色描边，逐句弹入；钩子那句（0-3s）字号最大、词对词高亮 |
 | 关键数字 | "14 days"、"13" 用放大一号字体单独强调（观众只记数字） |
 | 音效 | 翻纸声、纸条摩擦、红笔划纸三道声音放大到 60%（ASMR 感是这个赛道的隐性钩子）；笔尖敲纸两次对齐 beat |
 | 配音 | ElevenLabs 粘贴上面稿子，语速压到 0.95，句间留 0.3 秒 |
@@ -158,7 +122,7 @@ FORBID: no face, no legible writing or numbers, no text, no logos, no watermark,
 
 **生成质量**
 - [ ] 桌面木纹、台灯位置、水杯位置与基准照一致（可截图与基准照并排比对）
-- [ ] 只有一只手出镜（Shot 2/3 双手镜头除外，且不能出现第三只手）
+- [ ] 每镜最多两只手（Shot 1 交接、Shot 3 压纸），且不能出现第三只手
 - [ ] 手指数量正常、无融合、无多指
 - [ ] 没有任何可读文字/乱码（所有文字后期加）
 - [ ] 光线方向一致：暖光始终从左来
@@ -170,7 +134,7 @@ FORBID: no face, no legible writing or numbers, no text, no logos, no watermark,
 - [ ] 全片没出现 app 名字、没出现具体日期或校名
 
 **发布前**
-- [ ] 前 1.5 秒内出现"14 days"大字（完播率生死线）
+- [ ] 钩子句（"power to reject my homework"）在前 3 秒内完整出现，且画面同步有"纸条被拿走"的动作（完播率生死线）
 - [ ] 配音与字幕完全同步，无错位
 - [ ] 美东 19-22 点定时，TikTok 首发
 

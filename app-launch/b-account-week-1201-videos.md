@@ -1,32 +1,35 @@
 # B 自律号 · GA 周简短小视频包（11/30 – 12/6 · 视频版）
 
 > 配套：`b-account-week-1201.md`（叙事节拍/比分/人设卡的母本）+ `v1-ai-video-prompts.md` V2（场景基准照方案）。
-> **本文档 = 周包每一天的视频实现版**：每天一条 12-18 秒简短小视频，书桌戏、无真人开口、AI 配音（ElevenLabs），LibTV 图生视频（基准照首帧，单次 ≤30s）。
+> **本文档 = 周包每一天的视频实现版**：每天一条 15-24 秒简短小视频，书桌戏、无真人开口、AI 配音（ElevenLabs），LibTV 图生视频（**AI 生成的桌面基准图做首帧**，单次 ≤30s）。
 > 人设/比分/倒计时**直接从周包母本取数**，不另起炉灶——视频版和图集版是同一故事的两种格式（视频发 TikTok/Shorts，图集版发 IG 轮播，双版本 A/B）。
-> **⚠️ V-M1（2026-11-23 v9 定稿）口径，后续 V-M2~V-M5 待同步**：
+> **⚠️ V-M1（2026-11-24 v10 定稿）口径，后续 V-M2~V-M5 待同步**：
 > ①**Day N of 14，days left = 15 − N**（Day 1 = 14 days left；Day 14 = 1 day left；12/14 第一场期末开考 = 结算）；
 > ②**比分只有一套：任务得分，每项任务 1-3 分**（Day 1 = 3 : 0），不设让分、不做"她 40 小时 vs 我 0"这类第二套数字；
 > ③**每集必须演一个当天发生的事件**，不演"我打算开始"；
 > ④**人物动机一句话**：我要用她的标准赢她（所以把裁判权递给她，同时不服她）；
 > ⑤**任务 = 可交付的成果，不是时长**（20 道题、一章笔记、一套卷子）——**全季禁止"我学了 X 小时"当证据**；
-> ⑥**补救路径只有一条**：驳回**不可申诉**（争辩没用），但**可以修改申报/补证据后重新提交**——不许演"申诉成功"。
+> ⑥**补救路径只有一条**：驳回**不可申诉**（争辩没用），但**可以修改申报/补证据后重新提交**——不许演"申诉成功"；
+> ⑦**生成规范（v10 起全季执行）**：**一条提示词一次生成整条片**（不拆分拼接）；**纸面零文字**（只允许她的 ✗ 和 ✓，笔记本只给页边）；**真人场景零 UI**（手机屏幕朝下）；**禁止用后期糊字救画面**。
 
 ---
 
 ## 〇、先决条件（同 V2 提示词包）
 
-1. 4 张基准照已拍好存 `app-launch/scene-assets/`（desk-overhead / desk-side / desk-phone-closeup / desk-lowangle）
-2. **补拍一张**：`desk-side-morning.jpg`（同一张桌子、同一机位、拉开窗帘的清晨冷光——周二那支用。桌子物件一点不动，只换光线）
-3. **拍摄制服（新增强制项）**：我=深灰连帽衫、她=米白针织开衫，两件固定不换——不露脸的内容里，**袖口就是角色身份**，跨视频必须一致
-4. 场景一致性铁律不变：**锁的是桌子和物件；光线可以按剧情换（夜=台灯暖光，晨=窗帘冷光），但物件位置一根笔都不能挪**
+1. **4 张桌面基准图已生成**存 `app-launch/scene-assets/`（`desk-main` / `desk-side` / `desk-phone` / `desk-low`）——提示词见 V-M1「桌面基准图」节，**一天内一次做完，全季复用**
+2. **补一张晨光版**：`desk-main-morning.jpg`（用 `desk-main.jpg` 做图生图，只把光线换成拉开窗帘的清晨冷光、物件一点不动——周二那支用）
+3. **拍摄制服（强制项）**：我=深灰连帽衫、她=米白针织开衫，两件固定不换——不露脸的内容里，**袖口就是角色身份**，跨视频必须一致
+4. 场景一致性铁律：**锁的是桌子和物件；光线可以按剧情换（夜=台灯暖光，晨=窗帘冷光），但物件位置一根笔都不许挪**
+5. **生成方式（v10 起）**：每条片 = **一条提示词 + 一次生成**，首帧固定为基准图；**不做分段拼接**，出错整条重跑
 
-**每周生成量**：4 支 AI 视频（周三是纯录屏，不用 AI）× 3-4 镜头 ≈ 15 次生成，周日一次批量跑完。
+**每周生成量**：4 支 AI 视频（周三是纯录屏，不用 AI），**每条 3-5 次重跑预留 ≈ 12-20 次生成**，周日一次批量跑完。
 
 ---
 
 ## 周一 11/30 · V-M1【起源篇·14 天宣战】⭐⭐ 本周旗舰 · 全周标准样板
 
-> **本篇已按 2026-11-23 用户意见重做（v9）**：定位为**开赛第一天（Day 1 / 14 天起点）**，全片只演 Day 1 当天的事，核心是**"时长不算数，成果才算数"**这一转：**交权 → "学了 3 小时"被驳 → 改成"20 道题"并交出写满的笔记本 → 她翻页认可 → 3 分**。手戏段零 UI，**产品只在最后 3 秒真实录屏里出现**。**下面所有写法（镜头结构、提示词颗粒度、手部/服装一致性、验收清单）就是后续四篇的标准模板。**
+> **本篇已按 2026-11-24 v10 定稿**：定位为**开赛第一天（Day 1 / 14 天起点）**，只演 Day 1 当天的事——**交权 → "学了 3 小时"被驳 → 改交实物成果 → 她拨页验收 → 3 分**。三个关键调整：**①一条提示词生成整条 24 秒（不拼接）；②纸面彻底零文字（便签只有她的 ✗/✓，笔记本只给页边，你不需要后期糊任何东西）；③真人场景零 UI（手机屏幕朝下，产品展示交给 V-M3 纯录屏流）**。
+> **下面所有写法（基准图提示词、整段提示词颗粒度、手部/服装一致性、验收清单）就是后续四篇的标准模板。**
 
 ### 选题依据（美国真实校历，2026-11-23 查证）
 
@@ -73,26 +76,30 @@
 
 问题：时长**不可验证**，也不是任何人想要的结果。全世界所有计时器 app 都能干这事，凭什么用你的？
 
-**对的地基（v9）**
-> 任务 = **"Chapter 5 的 20 道练习题"**（一个可交付的成果）→ 证据 = **写满 20 道题的笔记本**（她能翻、能看、能判）→ 她认可的是**你做出来的东西**
+**对的地基（v10）**
+> 任务 = **"Chapter 5 的 20 道练习题"**（一个可交付的成果）→ 证据 = **一叠用过的纸**（她翻得动、能验）→ 她认可的是**你做出来的东西**
 
 这一改，三个问题同时解决：
 
-1. **逻辑成立**：她翻一页、看到写满的字，才有资格打勾
+1. **逻辑成立**：她**拨动纸页**（不是读内容）就有资格打勾——观众看到她真的在验东西
 2. **产品差异化第一次被讲清楚**：番茄钟记录你**坐了多久**，这个 app 要你**交出东西**——"认可"这个机制之所以成立，是因为有实物可认
-3. **你问的"落地结果"有了答案**：结果是**一页写满的题**（和 3 分），不是"三小时"这个空气数字
+3. **你问的"落地结果"有了答案**：结果是**做完的东西**（和 3 分），不是"三小时"这个空气数字
+
+> **为什么"只翻不看"反而更好**：观众看的是"她真的在检查"，不是"她在读什么"。而且纸面从不正对镜头 → **AI 没有画字的机会 → 零文字风险 → 零后期修补**。内容细节交给配音一句 "she flipped through it"，比任何特写都清楚。
 
 **所以剧情必须演"从时长到成果"的转变**——这才是第一集真正的成长弧：
 
 | 拍 | 我做了什么 | 她的反应 | 观众学到什么 |
 |----|-----------|---------|-------------|
 | 第一次申报 | "学了 3 小时"（比三根手指） | 摆手 → 画叉 | **时长不算数** |
-| 我改 | 划掉"3 小时"，写"20 道题"，推过去写满的笔记本 | 翻页看 → 打勾 | **成果才算数** |
+| 我改 | 不辩解了，直接推过去**一叠用过的纸** | 拨动页边验 → 打勾 | **成果才算数** |
 
 **金句（段 2 大字，也是这条视频的核）**：**"claimed 3 hrs. she asked: 3 hrs of WHAT?"**（我申报三小时。她问：三小时的**什么**？）
 这一句把产品价值一次说完——**不是"你花了多久"，是"你做出了什么"**。它比任何"记录你的努力"式文案都锋利，而且天然带争议（有人会站我："三小时也是努力啊"）。
 
-**这才是完整链条**：交权 → 我被"3 小时"驳回 → 我改成"20 道题"并交出实物 → 她翻页认可 → 3 分入账 → 录屏交付。
+**这才是完整链条**：交权 → 我被"3 小时"驳回 → 我不吵了、交出实物 → 她拨页验收 → 3 分入账 → 字幕宣布比分。
+
+> **v10 的一处删减**：原稿段 3 有"划掉旧行、写新行"（表达"改申报重新提交"），已删除——**那需要纸面正对镜头，等于把文字风险请回来**。改成**沉默地把成果推过去**：动作更少、更好生成，而且"不辩解、直接交东西"比"改写申报表"更有骨气，戏剧性更强。规则（可修改重交）由配音/字幕承担，不靠画面演。
 
 **产品规则口径卡（全季统一，不许改写）**
 > ①任务 = **可交付的成果**（不是时长、不是"我在学"）；
@@ -105,27 +112,116 @@
 
 ### 成品规格
 
-**23 秒 ｜ 4 段（3 段 AI 手戏 + 1 段真实录屏） ｜ 竖屏 1080×1920 ｜ 无真人露脸（只有手） ｜ ElevenLabs 配音 ｜ BGM 低调 phonk 20%**
+**24 秒 ｜ 一条 AI 视频（单次生成，不拼接、不分段）｜ 竖屏 1080×1920 ｜ 只有手 ｜ ElevenLabs 配音 ｜ BGM 低调 phonk 20%**
 
-> 全片只有**实物道具**（单子、笔、笔记本），手戏段零 UI；产品界面只在最后 3 秒真实录屏出现。
+> **三个"零"**：**零文字、零 UI、零后期修补**。
+> 全片纸面上只出现**两种符号**（一个红叉、一个红勾），没有一个字母、没有一个数字、没有一个汉字——**AI 没有机会生成伪文字**，你也不需要后期去做任何一处模糊。
 
-### 前 4 秒钩子（交权 + 已发生，两个钩子叠在 4 秒里）
+---
 
-| 时间 | 大字 | 作用 |
-|------|------|------|
-| 固定角标 | **"DAY 1 / 14"**（右上角，全季每集只改数字） | 追更符号 + 一眼看出是连载 |
-| 0-3s | **"I gave my roommate the power to reject my homework."** | 钩子一：**反常识的决定**（谁会干这事？他图什么？） |
-| 3-4s | **"Day 1. She already used it."** | 钩子二：**后果已发生**（她真用了——立刻想看怎么用的） |
+### 三个硬约束（先立住，再看脚本）
 
-> **钩子铁律**：①前 4 秒不提 app 名；②第一句是**一个决定**，第二句是**这个决定的后果**；③画面同步：说到 "power to reject" 时她的手正接过单子、拿起红笔。
+| # | 约束 | 做法 | 为什么 |
+|---|------|------|--------|
+| **① 一段生成** | 一条提示词、一次推理生成 24 秒连续画面 | 桌面/光线/袖口/道具在**同一次推理里天然一致**。分段拼接必漂移（物件挪位、光线变色、袖口换色），而且漂移了后期根本修不回来 |
+| **② 只翻不看** | 笔记本**只以"页边"入画**，她只是用拇指拨动纸页、从不"读"；纸面永远不正对镜头 | 你要的正是这个：观众只需看懂"她检查了成果"，不需要看懂内容。**生成阶段不给模型画字的机会**，所以后期一次都不用修 |
+| **③ 零 UI** | 手机全程屏幕朝下扣在桌上；产品界面一个像素都不出现 | 你定的"真人场景不演 app"，同时躲掉 AI 生成 UI 必乱码。**产品展示交给 V-M3 纯录屏流**（一条 15 秒全界面视频，比塞 3 秒更有效） |
 
-**配音稿**（23 秒，冷静嘴硬 + 轻微自嘲的年轻声）：
-> "Day one of fourteen. I gave my straight-A roommate the power to reject my homework. I said I studied three hours. She asked — three hours of what? Rejected. No appeals. So I stopped counting hours. Twenty problems, done. She checked every page. Approved. Three points. Day one: me three, her zero. Fourteen days, highest score wins. Who's trying this with their roommate? Let me know."
-> （14 天的第 1 天。我把驳回我作业的权力，交给了我那个全 A 室友。我说我学了三小时。她问——三小时的什么？驳回。不许申诉。所以我停止数小时了。二十道题，做完了。她把每一页都翻了。通过。三分。第一天：我三，她零。14 天，任务得分高者胜。谁想跟室友来一场？评论区说。）
+> **唯一还需要后期的是"叠加"类工作**：大字字幕、配音、BGM、音效——这些是往上加东西，不是修画面。
 
-> **"She asked — three hours of what?"** 是全片情绪的转折点，配音这里要有 0.4 秒的停顿（像被问住了）。
+---
 
-### 全片统一的"手部身份证"
+### 桌面基准图（先生成 4 张，全季所有视频都引用）
+
+**逻辑**：LibTV 图生视频 → **首帧图决定桌面长相**。基准图一旦定下来，后面每条视频的桌子、台灯、水杯、笔、纸的位置 100% 不变，一致性问题在源头解决。
+
+#### 生成顺序（这一步别搞错，顺序决定一致性）
+
+1. **先生成主图**（俯拍 45°）——这是唯一一张"从零生成"的
+2. **再用主图做图生图**，只改机位、其余描述原样不动，得到侧图 / 手机视角 / 低角度
+
+> 为什么不四张都从零生成：四段独立提示词出来的桌面，木纹走向、水杯位置、台灯角度一定不同，四张图互相对不上，等于白做。**一张主图派生出全部机位**，物件布局天然一致。
+
+#### 图 1 · 主图（俯拍 45°，90% 的镜头都用这张）
+
+```
+Realistic photo, shot on iPhone 15 Pro main camera, vertical 9:16, 3024x4032, f/1.8,
+natural indoor lighting, no filter, no color grading, slight sensor noise.
+
+Subject: a small wooden desk in a student room, shot from above at a 45-degree angle,
+the desk filling the lower two thirds of the frame, a dark blurred room in the upper third.
+
+Desk surface: light oak wood, fine straight grain running left to right, matte finish,
+faint water ring near the right edge, two or three shallow scratches, one small dark
+knot in the grain near the bottom left corner.
+
+Objects, fixed positions (this exact arrangement must never change):
+- upper left: a matte black metal desk lamp with a round flat base and a short adjustable
+  arm, warm 3200K light spilling from it across the desk toward the lower right
+- upper right: a white ceramic mug, handle pointing right, a thin dried coffee ring
+  inside the rim
+- centre: a small plain notepad with faint horizontal rules, blank, no writing
+- lower left (the owner's side): a stack of about twenty used loose sheets with slightly
+  curled uneven edges, seen edge-on, and two pens lying parallel beside it, one black,
+  one dark blue, caps on
+- lower right: a dark phone lying face down, screen not visible
+- at the far right edge, half out of frame: a folded pair of grey socks
+
+Light: single warm lamp from the upper left, sharp falloff toward the lower right
+corner which sits in soft shadow; faint cool spill from an off-frame window at the far
+left. Late evening, quiet, lived-in.
+
+Camera: static, slightly off-axis (not perfectly centred), moderate depth of field with
+the desk surface in focus and the background room falling into soft blur.
+
+No people, no hands, no text anywhere.
+```
+
+**中文要点**：浅橡木桌面、木纹横向、右缘一道水渍环、左下一个小木节；**台灯在左上**（黑色圆盘底座、暖光向右下衰减）、**马克杯右上**（杯口有咖啡渍环）、便签本居中（横线、空白、**不写字**）、**左下角 = 我的地盘**（约二十张用过的纸，只看得到页边卷角 + 两支笔平行放）、手机右下**屏幕朝下**、最右缘一双灰袜子半出画。
+
+> **左右分区是这一版新加的关键**：**我在左下、她在右上**。这条一旦定下来，"我推过去→她接→推回来"整个动作逻辑就有方向了；不定的话 AI 会把两只手随机丢在画面里，动作看起来像两个人抢东西。
+
+#### 图 2 · 侧 45°（用于"推东西过去"这类横向动作）
+
+用图 1 做图生图，只替换这段相机描述：
+
+```
+Change only the camera: now a three-quarter side view at 45 degrees from the left,
+lens height about 25 cm above the desk, the same desk and the same objects in exactly
+the same positions, the lamp now in the left foreground slightly out of focus, the room
+behind falling into soft blur. Everything else identical to the reference image.
+```
+
+#### 图 3 · 手机视角（平板高度，俯视 70°，用于"她审我"的压迫感）
+
+```
+Change only the camera: now a near-overhead view at about 70 degrees, lens height
+roughly 40 cm, framing tighter so the notepad and the stack of sheets fill the centre,
+the lamp glow entering from the top left corner. Same desk, same objects, same positions.
+```
+
+#### 图 4 · 低角度（桌沿平视，用于结尾定格）
+
+```
+Change only the camera: now a low angle with the lens almost level with the desk
+surface, roughly 8 cm above it, looking across the desk toward the blurred room,
+the mug and the stack of sheets in the foreground slightly blurred, the notepad edge
+in the middle, warm lamp light raking across the wood grain. Same objects, same positions.
+```
+
+#### 存图与引用规则（全季固定）
+
+| 项 | 规则 |
+|----|------|
+| 文件名 | `desk-main.jpg` / `desk-side.jpg` / `desk-phone.jpg` / `desk-low.jpg`，存 `app-launch/scene-assets/` |
+| 首帧 | **每条视频、每个生成请求都用 `desk-main.jpg` 做首帧**（除特殊机位） |
+| 提示词第一句 | 永远固定为 `Continue exactly from the provided reference frame.` |
+| 参数 | 首帧一致性/参考强度**拉到最高**；只要桌面开始漂移（物件挪位、木纹变色）就立刻停下重来，**不要试图后期修** |
+| 换季 | 换赛季才换桌面档案；赛季中换道具 = 重出 4 张基准图（旧视频不复用） |
+
+---
+
+### 手部身份证 + 本集道具
 
 | 角色 | 袖口 | 饰品 | 用手 |
 |------|------|------|------|
@@ -134,171 +230,223 @@
 
 > 不露脸的内容里，**袖口就是角色身份**，整个赛季保持一致。
 
-### 本集道具（每个都字面可见，不做隐喻）
+| 道具 | 作用（观众一眼看懂） | 关键约束 |
+|------|-------------------|---------|
+| **空白横线便签**（一张） | 我申报的载体；她的判决写在上面 | **原本空白**——上面只会出现她画的**一个叉、一个勾**，没有字 |
+| **红色粗头笔** | 她的判决工具 | 叉两道、勾一个 |
+| **一叠用过的纸（约二十张）** | **我的成果**（她检查的对象） | **只以页边/侧面入画**，纸面永不正对镜头 |
+| 手机（**屏幕朝下**） | 场景固定件，不承载信息 | 全程不翻面、不亮屏 |
+| 台灯、水杯、两支笔 | 场景固定件，不动 | 与基准图完全一致 |
 
-| 道具 | 作用（观众一眼看懂） | 出现段 |
-|------|-------------------|-------|
-| 一张横线任务单（字迹模糊不可读）+ 蓝色笔 | 我申报的内容；蓝笔用来**划掉旧的、写新的** | 1、2、3 |
-| **红色粗头笔** | 她的判决工具（摆手 / 画叉 / 打勾） | 1、2、4 |
-| **摊开的笔记本（密布笔迹、字迹虚焦不可读）** | **我的成果**——这是"认可"能成立的关键实物；**只出现"密度"，绝不出现"内容"** | 3、4 |
-| 手机（**屏幕朝下或不朝向镜头**） | 只在段 4 转向镜头，接真实录屏 | 4 |
-| 黑色笔 | 写比分 | 4 |
-| 台灯、水杯（场景固定件，不动） | 场景一致 | 全部 |
+> **⚠️ 计时器、手机屏、任何"字"——全部不在本片出现。**
+> 纸面上只有两种符号：**✗ 和 ✓**。这就是本片"零文字"的全部内容。
 
-> **⚠️ 计时器彻底删掉**：它是弱证据（只证明手机开着），也是这段逻辑崩塌的根源。
-> **⚠️ 手戏段手机屏幕一律拍不到**：朝下放、或推向她时屏幕朝她。UI 只在段 4 的真实录屏里出现。
+#### 为什么不用后期改模糊（原则）
 
-### 笔记本字迹怎么处理（AI 最容易露馅的地方，三档保险）
-
-**风险说清楚**：AI 生成"写满字的纸"必出**伪文字（pseudo-text）**——远看像手写，稍微放大就是乱码、歪扭符号、半截字母。观众一旦盯着看，AI 感立刻爆，整条片的可信度全毁。
-
-**处理原则一句话**：**让"密度"在，让"内容"不在**——观众要看到"写满了"，绝不能看到"写的是什么"。
-
-#### 第一档：生成层就解决（最有效、零后期成本）
-
-三个锁定，必须同时写进提示词：
-
-| 锁 | 做法 | 为什么 |
-|----|------|--------|
-| **①描述"笔迹线条"，不描述"文字"** | 写 `pages densely covered with soft grey handwriting strokes`（页面密布柔和的灰色笔迹线条）<br>**绝不写** `handwritten notes` / `English words` / `Chinese characters` / `text` | 后几种写法会**直接诱导模型去画具体字符**，必出伪文字；只描述"线条/纹理"，模型画的就是一团模糊的笔迹质感 |
-| **②浅景深 + 焦点偏移** | `shallow depth of field, f/1.8 look, focus on the fingertip, the page falls off into soft blur` | 焦点在**手指/笔尖**上，纸面物理性虚掉——这是最不像作弊的糊法 |
-| **③构图避开"正面俯拍特写"** | **斜侧 30-40 度、笔记本只占画面 1/3**，翻页时她的手挡住大半 | 字越小、角度越斜、遮挡越多，越不需要后期修 |
-
-#### 第二档：动作层规避（用"动"盖"糊"）
-
-- **翻页要快**：0.35 秒/页，连翻 2 页。**慢翻才露馅**，快翻天然带运动模糊
-- **只在"页面半掀起"的帧上多留时间**：那几帧纸是斜的、在动，必然糊
-- **她的拇指按住页面上半**：只露出下半 1/3，内容永远看不全
-
-#### 第三档：后期兜底（万一生成出清楚的字）
-
-按顺序做，做到够就停：
-
-| 步 | 做法 | 参数（1080p） |
-|----|------|--------------|
-| 1 | **蒙版高斯模糊**，只糊纸面、手指边缘不动（跟踪蒙版） | 2-3px |
-| 2 | **降对比 + 加胶片颗粒**，让字迹融进纸色 | 对比 −15%~−20%，颗粒 8% |
-| 3 | **叠真实纸张纹理**（扫描的旧纸，正片叠底） | 不透明度 20% |
-
-> 第 3 步最狠——AI 的纸面总是"太干净"，一叠真实纸纹，伪文字立刻被压成质感。
-
-#### 零风险替代方案（怎么都做不好时用这个）
-
-**不拍纸面内容，只拍"厚度"和"翻动"**：她的拇指从侧面**划过一叠写过字的纸边**——观众看到"很厚一叠用过的纸"，完全不需要看里面写了什么，逻辑照样成立（她检查了成果）。
-
-- 这个方案 **100% 没有文字风险**，可以直接当备用镜
-- 更保底的 B 计划：把翻页那段换成**纯手部特写**（画面只框住手和纸边，纸面完全在画外）
-
-#### 验收标准（客观可判，不靠感觉）
-
-把段 3、段 4 逐帧过一遍，**任何一帧放大 200% 能认出字母或汉字 → 重做或加模糊**。判断标准是"能不能读"，不是"好不好看"。
+- 后期糊字是**补救**，不是**方案**：糊得轻还能认出字母，糊得重纸面就变成一块脏斑，观众照样觉得假
+- 而且一旦要糊，说明生成阶段就不可控——**下一次还是不可控**，每集都得修，成本复利
+- 本片的做法是**让文字根本不进入画面**：纸面内容 = 一个叉、一个勾；笔记本 = 只有页边。模型没有任何机会画字，你没有任何一处需要修
 
 ---
 
-### 逐段脚本
+### 全片节拍（24 秒 · 5 拍 · 每拍一个字面因果）
 
-| 段 | 时间 | 首帧 | 画面动作（起→止，字面可读） | 屏幕大字 | 配音对齐 |
-|----|------|------|--------------------------|---------|---------|
-| **1·钩子：交权** | 0-4s | desk-overhead.jpg | 灰袖手把任务单**推到桌子右侧** → 米白袖手**接过单子、拿起红笔** | "I gave my roommate the power to reject my homework." → "Day 1. She already used it." | 第一、二句 |
-| **2·驳回：时长不算数** | 4-10s | desk-overhead.jpg | 灰袖手指尖**点单子上的那行**，然后**举起三根手指**（辩解：三小时）→ 米白袖手**手掌在桌面上左右摆两下（摆手：不行）** → **红笔重重画叉（两道）** → 单子**推回画面左侧** | **"claimed 3 hrs. she asked: 3 hrs of WHAT? ❌"** | 第三至五句 |
-| **3·我改：从时长改成成果** | 10-16s | desk-side.jpg | 灰袖手拿**蓝笔把单子上那行划掉**、在下行**写新的**（写两秒）→ 把**摊开的笔记本（斜侧 35° 入画、字迹虚焦）推到她面前**、单子压在笔记本上 | **"no appeals. so I stopped counting hours."** | 第六、七、八句 |
-| **4·通过 + 真实录屏 + 比分** | 16-23s | desk-overhead.jpg → 录屏 | 米白袖手**拇指挑页角、快速连翻两页**（0.35s/页，斜侧入画、纸面虚）→ **红笔打一个勾**（0.8s）→ 灰袖手把手机**转过来面对镜头**（0.8s）→ **切全屏真实录屏 3s**：任务 `Ch.5 · 20 problems` → 绿勾 `APPROVED +3` → 比分条 `me 3 · her 0` → 切回手戏：黑笔写 **"3 : 0"** | 录屏段："this is what counts"<br>结尾："day 1: me 3 · her 0. who's trying this? lmk 👇" | 第九句至结尾 |
+| 拍 | 时间 | 画面动作（字面可读，不需要解释） | 屏幕大字 | 观众看到的因果 |
+|----|------|------------------------------|---------|--------------|
+| **1 · 交权** | 0-4s | 灰袖手把**空白便签**推到桌子右侧 → 米白袖手**接过、拿起红笔**（笔尖悬着没落） | "I gave my roommate the power to reject my homework." → "Day 1. She already used it." | 权力真的交到她手上了 |
+| **2 · 驳回** | 4-9s | 灰袖手在桌面上**举起三根手指** → 米白袖手**手掌朝下左右摆两下**（不行）→ **红笔画两道叉** → 便签推回左侧 | **"claimed 3 hrs. she asked: 3 hrs of WHAT? ✗"** | 报时长 → 被否 → 驳了 |
+| **3 · 我改** | 9-14s | 灰袖手把那**一叠用过的纸推到她面前**，便签压在纸上 → 手退回画外 | "no appeals. so I stopped counting hours." | 我不吵了，我交东西 |
+| **4 · 认可** | 14-19s | 米白袖手拇指**拨动纸页边缘、快拨三下**（纸页成扇形掀起，只见页边）→ 拿起红笔**打一个勾** | "she checked the work. ✓" | 她验的是成果 → 通过 |
+| **5 · 比分** | 19-24s | 米白袖手把便签**翻过来（叉朝下）** → 灰袖手**食指在桌面敲两下** → 定格 | "day 1: me 3 · her 0. who's trying this? lmk 👇" | 判决结束，第一天我领先 |
 
-**每一段的因果（自查用，观众不需要任何解释就要看懂）**：
-1. 我把单子推过去 → 她接过、拿起红笔 = **权力真的在她手上**
-2. 我举三根手指（三小时）→ **她摆手** → 画叉 → 单子推回 = **三小时不够，被驳**
-3. 我划掉那行、写新的 → 把**写满的笔记本**推过去 = **我不再报时间，我交东西**
-4. 她**快速翻两页**（纸面看不清但明显写满）→ 打勾 → 手机转向镜头 → 3 : 0 = **东西过关了，我拿 3 分**
+**五拍的因果链（自查用）**：
+1. 我推单子 → 她接、拿笔 = **权力在她**
+2. 我举三指 → 她摆手 → 画叉 → 推回 = **三小时不算数**
+3. 我推一叠纸 = **我换成交实物**
+4. 她拨页边看 → 打勾 = **东西过关**
+5. 翻面 + 敲两下 = **本集结束**（比分交给字幕）
 
-> **全片最强的两个动作**：①她**手掌左右摆两下**（"摆手"是最生活化的否定，比摇头更适合只有手的画面）；②她把**笔记本翻一页**（这一翻，观众立刻明白"她在看实际做的东西"——产品的价值不用一句台词就讲完了）。
-
-**分段时间预算（剪辑时按这个卡）**
-
-| 段 | 时长 | 说明 |
-|----|------|------|
-| 1 钩子 | 4s | 两句钩子必须说完 |
-| 2 驳回 | 6s | 含"举三指"0.8s + "摆手"0.6s + 画叉 1s |
-| 3 我改 | 6s | 划掉 1s + 写 2s + 推笔记本 1.5s |
-| 4 通过+录屏+比分 | 7s | 翻页 1.2s + 打勾 0.8s + 转手机 0.8s + 录屏 3s + 写比分 1.2s |
+> **全片最强的两个动作**：①她**手掌在桌面左右摆两下**（最生活化的否定，比摇头更适合只有手的画面）；②她**拇指拨动纸页边缘**——这一拨，观众立刻懂"她在验收成果"，产品的价值不用一句台词就讲完，而且**纸面从来没有正对过镜头**。
 
 ---
 
-### Day 与比分口径（全季统一，不许再变）
+### 整段视频提示词（一条 · 直接粘贴 LibTV · 24 秒）
 
-| 项 | 规则 |
-|----|------|
-| Day 编号 | **Day N of 14；days left = 15 − N**（Day 1 = 14 days left；Day 14 = 1 day left） |
-| 赛季结算 | **12/14 第一场期末开考 = 结算日**（不算在 14 天内，是"审判日"） |
-| 任务定义 | **可交付成果**（20 道题、一章笔记、一套模拟卷），**不是时长** |
-| 计分 | **每项任务 1-3 分**（按难度），只有**被对方认可**的任务才计分 |
-| Day 1 比分 | **me 3 · her 0**（我通过了"Ch.5 二十道题"= 满档 3 分；她今晚才申报） |
-| 补救路径 | **驳回不可申诉，但可修改申报重新提交**——内容里必须这么演 |
+> 首帧图：`desk-main.jpg` ｜ 一致性拉到最高 ｜ 时长 24s ｜ 9:16
 
-### 提示词
+```
+Continue exactly from the provided reference frame. One single continuous shot,
+no cuts, no scene changes.
 
-> **⏸ 待脚本确认后重写**：按上面 4 个生成镜头（段 1 交权、段 2 点单+举三指+摆手+画叉、段 3 划掉重写+推笔记本、段 4 翻页+打勾+转手机）以 LOCK / SCENE / ACTION / CAMERA / LOOK / FORBID 六级结构产出。**段 4 的录屏不用生成**，直接真实录屏。
-> 高难镜预判：段 2 一镜里五个动作（点单→举三指→她摆手→画叉→推回），**必须拆成 2a（我举三指）/ 2b（她摆手）/ 2c（画叉推回）三个生成片段**；段 3 的"划掉一行再写一行"拆成 3a/3b；段 4 的翻页拆成 4a（推笔记本+手挡）/ 4b（拇指挑页角快翻）。
->
-> **写提示词时三条必带的锁定（缺一条就等着返工）**：
-> ①纸面一律用 `pages densely covered with soft grey handwriting strokes`（**不写 notes / words / characters / text**）
-> ②一律带 `shallow depth of field, f/1.8 look, focus on the fingertip, page falls into soft blur`
-> ③一律带 FORBID：`readable text, letters, words, legible handwriting, crisp print, pseudo-text, watermark, logo, UI elements`
+TECHNICAL
+Vertical 9:16, 1080x1920, 24 fps, shot on iPhone 15 Pro main lens, f/2.0, natural
+available light only, no filter, no color grading, subtle sensor grain, realistic skin
+texture with visible pores and fine lines, short unpolished fingernails, slight natural
+handheld micro-movement, the camera essentially static with only breathing-level drift.
 
-### 后期（CapCut）
+SCENE (locked)
+The wooden student desk from the reference frame, unchanged: light oak with fine
+horizontal grain, matte black desk lamp at the top left throwing warm 3200K light toward
+the lower right, white ceramic mug with a dried coffee ring at the top right, a small
+plain ruled notepad in the centre, a black pen and a dark blue pen lying parallel on the
+left, a stack of about twenty used loose sheets on the right with slightly curled edges,
+a dark phone lying face down at the bottom right, faint cool window spill from the far
+left. Late evening, lived-in room, background falling into soft blur.
+Do not add, remove, or move any object. Do not change the composition.
+
+CAST (hands only, never above the wrist)
+The owner, wearing a dark grey hoodie cuff, sits at the LOWER LEFT and every one of his
+actions enters the frame from the lower left corner.
+The roommate, wearing a cream knit cardigan cuff, sits at the UPPER RIGHT and every one of
+her actions enters the frame from the upper right corner.
+Their hands never overlap, never cross, and never swap sides.
+No rings, no watches, no jewellery. Each actor uses only the right hand. Maximum two hands
+in frame at any moment.
+
+BEATS
+0.0-4.0s  A dark grey hoodie sleeve slides in from the lower left and pushes a small blank
+          ruled notepad into the centre of the desk. A cream cardigan sleeve comes down
+          from the upper right, takes the notepad, and picks up a red marker, the tip
+          hovering above the paper without touching it.
+4.0-9.0s  The grey sleeve raises three fingers, held low above the wood on the left side.
+          The cream sleeve rotates a flat palm and sweeps it left and right twice above the
+          centre, a clear refusal. The red marker then draws a firm X across the notepad,
+          one stroke, then a second stroke crossing it, and the cream sleeve pushes the
+          notepad back toward the lower left.
+9.0-14.0s The grey sleeve slides the stack of used sheets from the lower left up into the
+          centre, the notepad resting on top of the stack, then withdraws back out of frame.
+14.0-19.0s The cream sleeve's thumb riffles the edge of the paper stack three times, the
+          pages fanning open briefly so only their edges are visible, the flat faces never
+          turning toward the lens. The hand then picks up the red marker and draws a single
+          check mark on the notepad.
+19.0-24.0s The cream sleeve turns the notepad over, face down, covering the X, and
+          withdraws to the upper right. A grey hoodie index finger comes in from the lower
+          left and taps the wood twice, then the frame holds still, the warm lamp light
+          settling on the desk.
+
+CAMERA
+Fixed-offset overhead angle at roughly 45 degrees, lens height about 30 cm, moderate depth
+of field with the desk and hands sharp and the room blurred behind. The notepad stays in
+the centre of the frame throughout, the lower left corner reserved for the owner's hand and
+the upper right corner for the roommate's hand. No zoom, no pan, no dolly, no rack focus,
+no handheld shake beyond breathing level, no camera movement of any kind.
+
+LOOK
+Warm single-source lamp light from upper left with realistic falloff into shadow at the
+lower right, soft cool fill from the far left, skin lit warmly on the near side, contact
+shadows under the hands and the paper, slight grain, documentary realism, ordinary
+unstyled student desk, no glamour.
+
+FORBID
+Faces, heads, arms longer than the wrist, any visible forearm or body;
+any text, letters, numbers, words, handwriting, printed characters, symbols other than
+the single red X and the single red check, decorative patterns on paper, visible content
+on the paper stack;
+phone screens, app interfaces, UI elements, notifications, glowing screens, readable
+displays, watch faces;
+extra hands, extra fingers, fused or melting fingers, distorted wrists, more than two
+hands at once;
+duplicated or teleporting objects, changing mug or lamp position, changing wood grain or
+colour temperature, objects entering or leaving the frame unexpectedly;
+cuts, transitions, camera pans, zooms, drone shots, time-lapse, speed ramps;
+subtitle text, captions, watermarks, logos, borders, split screen;
+plastic or smoothed skin, beauty filter, oversaturated colour, studio lighting, HDR glow,
+perfectly clean surfaces, artificial studio perfection.
+```
+
+#### 中文对照（逐条对齐检查用）
+
+| 区块 | 内容 |
+|------|------|
+| 起手 | "完全延续给定参考帧"——桌面长相 100% 来自基准图 |
+| 技术 | 9:16 / 1080×1920 / 24fps / iPhone 主摄 f2.0 / 自然光 / 无滤镜 / 微颗粒 / 真实皮肤毛孔 / 指甲短而不修边 / 呼吸级微抖 |
+| 场景锁定 | 复述基准图每一个物件与位置，并明确"不许加、删、移动任何物件，不许改构图" |
+| 角色 | **只到袖口，不许出现手腕以上**；灰=我、米白=她；每人只用右手；画面同时最多两只手 |
+| 节拍 | 五拍时间码，动作全部可执行、字面因果 |
+| 机位 | 固定 45° 俯拍、高 30cm、无任何运镜（**AI 默认爱推拉，必须明令禁止**） |
+| 观感 | 单光源暖光+左侧冷补、真实接触阴影、纪实感、普通学生桌面、不打光美化 |
+| 禁止项 | 脸/手臂/任何文字数字/**除一个叉一个勾以外的任何符号**/手机屏与 UI/多余手与手指/物件漂移/剪辑运镜/字幕水印/塑料皮肤 |
+
+#### 生成参数（照着填）
+
+| 参数 | 值 | 说明 |
+|------|----|------|
+| 时长 | **24s**（上限 30s，别顶满） | 留余量给模型收尾，顶满容易在最后一秒变形 |
+| 首帧图 | `desk-main.jpg` | 一致性/参考强度**拉到最高** |
+| 分辨率 | 1080×1920（9:16） | |
+| 运动幅度 / 动态强度 | **中等偏低** | 长镜头动作一多就糊、手就变形；宁可动作慢半拍 |
+| 随机种子 | **成功那次记下 seed** | 后续每条视频用同 seed，观感（颗粒/色彩/光线）最接近 |
+
+#### 三个操作铁律
+
+1. **一次出整条 24 秒**，不要中途切成两段——切了就漂移
+2. 若某一拍出错（手指数量、物件挪位、画出多余符号）：**整条重跑，不要只修那一段**（修了必然接不上）
+3. 失败率按 40% 预估，预留 **3-4 次重跑**；只在"桌面漂移 / 出现文字 / 手指数错"这三种情况下重跑，光影小差异可以接受
+
+---
+
+### 配音稿（24 秒 · 冷静嘴硬 + 轻微自嘲的年轻声 · 语速 0.95）
+
+> "Day one of fourteen. I gave my straight-A roommate the power to reject my homework. I said I studied three hours. She asked — three hours of what? Rejected. No appeals. So I stopped counting hours and handed her the work instead. She flipped through it. Approved. Three points. Day one: me three, her zero. Fourteen days, highest score wins. Who's trying this with their roommate? Let me know."
+
+> （14 天的第 1 天。我把驳回我作业的权力，交给了我那个全 A 室友。我说我学了三小时。她问——三小时的什么？驳回。不许申诉。所以我不再数小时了，我把做的东西交给她。她翻了翻。通过。三分。第一天：我三，她零。14 天，任务得分高者胜。谁想跟室友来一场？评论区说。）
+
+> **"three hours of what?"** 是全片转折点：这里留 **0.4 秒停顿**（像被问住了），BGM 同步归零。
+
+---
+
+### 后期（只有叠加，没有修图）
 
 | 项 | 做法 |
 |----|------|
-| 大字字幕 | 放画面中下部（胸口位置），白色粗体+黑色描边，逐句弹入；两句钩子字号最大 |
+| 大字字幕 | 画面中下部（胸口位置），白色粗体+黑描边，逐句弹入；两句钩子字号最大 |
 | 系列角标 | **"DAY 1 / 14"** 固定右上角，半透明，全季每集只改数字 |
-| 关键数字 | **"3 hrs"、"20"、"3 : 0"** 放大一号；**"WHAT?"** 单独加大+"?"闪一下 |
-| 录屏段 | **真实录屏 3 秒，不加速、不加特效**；只做两件事：①比分条放大到画面中央 ②绿勾出现时加一声"叮" |
-| 界面叠画 | 段 1-3 **完全不叠 UI**；UI 只在录屏段出现 |
-| **纸面处理（本片重点）** | 见「笔记本字迹怎么处理」三档保险：蒙版模糊 2-3px + 对比 −15% + 纸纹叠底 20%，**只糊纸面不糊手指** |
-| **逐帧过字** | 段 3/4 逐帧放大 200% 检查，**只要有一帧能认出字母或汉字就重做** |
-| 音效 | 举手指时无音效（留白）；**摆手时一声轻微的"嗒"**（手掌拍桌）；画叉两道（第二道 75%）；翻页声（真实、放大）；蓝笔写字；绿勾"叮"对齐 +3 |
-| 配音 | ElevenLabs，语速 0.95；"three hours of what?" 前留 0.4 秒空白 |
-| BGM | 低调 phonk 20%；"WHAT?" 那一下**归零 0.4 秒**；段 4 录屏时回到 25% |
+| 关键数字 | 字幕里的 **"3 hrs"、"3 · 0"** 放大一号；**"WHAT?"** 单独加大、"?" 闪一下 |
+| 音效 | 举三指无音效（留白）；**摆手时一声轻微"嗒"**（手掌擦桌）；画叉两道（第二道 75%）；推纸的摩擦声；**拨页声放大到 70%**（本片的隐藏爽点）；打勾一声轻"叮"；结尾敲桌两下对齐 beat |
+| BGM | 低调 phonk 20%；**"what?" 那一下归零 0.4 秒** |
+| 调色 | **不做**。最多统一一次亮度（±3 以内），不要套 LUT——一调色就和下一条对不上 |
 | 结尾 | 定格 0.5 秒，让 "who's trying this? lmk" 有反应时间 |
+| **不要做的** | 不要糊纸面、不要换手机屏、不要叠 UI、不要加转场——**画面一个字都不许修** |
 
 **Caption**：`day 1 of 14. I told my straight-A roommate I studied 3 hours. she asked "3 hours of WHAT?" ... she was right 😭`
-**置顶评论**：`she rejected "3 hours" and approved "20 problems" in the same minute. brutal but fair`
+**置顶评论**：`she rejected "3 hours" and approved the actual work in the same minute. brutal but fair`
 **标签**：#studytok #finalsweek #deadweek #collegelife #studymotivation
 
-> 置顶评论这条是故意的：它把这条视频的**核心观念**（时长 vs 成果）浓缩成一句，而且"brutal but fair"会让两派人在评论区吵——一派觉得她太苛刻，一派觉得她说得对。
+> 置顶评论故意把核心观念（时长 vs 成果）压成一句，而且 "brutal but fair" 会让两派人在评论区吵——一派觉得她太苛刻，一派觉得她说得对。
 
 ---
 
 ### 验收清单（这条不过关就别发）
 
-**逻辑（第一集最要紧）**
-- [ ] 全片只讲 Day 1 当天的事：交权 → "3 小时"被驳 → 改成 20 道题 + 交实物 → 翻页认可 → 3 分
-- [ ] **第一次被驳的理由是可视的**：她摆手 + 我举三根手指（时长），不是"她莫名其妙不批"
-- [ ] **通过的证据是实物成果**（写满的笔记本），不是时长、不是屏幕截图
-- [ ] "解释"必须是**失败的**（摆手/画叉），不能演成申诉成功
-- [ ] 计分只有一套：**任务 1-3 分制，我 3 分、她 0 分**
-- [ ] **全片没有计时器**，也没有任何"用时长当证据"的画面
-- [ ] Day 1 = 14 days left，角标 "DAY 1 / 14"
+**逻辑**
+- [ ] 全片只讲 Day 1 当天的事：交权 → "3 小时"被驳 → 交实物 → 拨页认可 → 3 分
+- [ ] 第一次被驳的理由**可视**：三根手指 + 她摆手，不是"莫名其妙不批"
+- [ ] 通过的证据是**实物成果**（一叠用过的纸），不是时长、不是屏幕
+- [ ] "解释"是**失败的**（摆手、画叉），没有演成申诉成功
+- [ ] 计分只有一套：**任务 1-3 分制，我 3、她 0**，全部由字幕承担
+- [ ] 角标 "DAY 1 / 14"，Day 1 = 14 days left
+- [ ] **全片没有计时器、没有手机屏、没有任何字**
 
-**生成质量**
-- [ ] 桌面木纹、台灯、水杯位置与基准照一致
-- [ ] 每镜最多两只手，无第三只手、无多指、无融合
-- [ ] 手戏段**没有任何可读文字/乱码**（单子、笔记本上的字必须模糊不可读）
-- [ ] 光线方向一致：暖光始终从左来
-- [ ] "举三根手指"那镜检查手指数量（AI 高发错误，必须正好三根）
-- [ ] **笔记本页面的字看不清**：逐帧放大 200%，任何一帧能认出字母/汉字就不合格（AI 伪文字是本片最大露馅点）
-- [ ] 笔记本在画面里**不超过 1/3**、角度**斜侧 30-40°**、翻页时她的手挡住大半
+**生成质量（一次过，不修）**
+- [ ] 桌面木纹、台灯、水杯、两支笔、纸堆位置与 `desk-main.jpg` 一致（逐帧比对）
+- [ ] 任意时刻**最多两只手**，无第三只手、无多指、无融合、无手腕以上部位入画
+- [ ] **纸面没有任何可读内容**：便签只有 ✗ 和 ✓；纸堆只有页边（放大 200% 也读不出任何字母/数字）
+- [ ] 拨页三下时纸页成扇形，**平面从未转向镜头**
+- [ ] 光线方向一致：暖光始终从左上来
+- [ ] "举三根手指"正好三根（AI 高发错误）
+- [ ] 手机全程屏幕朝下、没有亮屏
+- [ ] 全片无运镜（无推拉、无变焦、无摇移）
 
 **叙事一致性**
 - [ ] 袖口对：我=深灰连帽衫、她=米白针织（全片不能混）
 - [ ] 结尾是"你也想试"的邀请式 CTA（不是"求下载"）
 - [ ] 全片没出现 app 名字、没出现具体日期或校名
-- [ ] **录屏里没有"下载""sign up""免费"字样**（会被判广告降流）
 
 **发布前**
-- [ ] 钩子句在前 4 秒内说完，画面同步是"她接过单子拿红笔"
+- [ ] 钩子句在前 4 秒内说完，画面同步是"她接过便签、拿起红笔"
 - [ ] "three hours of what?" 前后各留 0.4 秒空白，BGM 确实归零
-- [ ] 录屏是**真实版本**（不是设计稿——观众会去下载核对）
-- [ ] 美东 19-22 点定时，TikTok 首发
+- [ ] 产品引导已就位：**主页置顶 = V-M3 录屏流**，评论区问 app 名就回 "it's in my bio 🎯"
+- [ ] 美东 19-22 点定时，TikTok 首发 → 24h 后 YT Shorts + IG Reels
 
 ---
 
@@ -433,22 +581,26 @@ Hesitant fear mood, warm-cool mixed light, realistic hand tremor, no text, no wa
 
 ## 本周时刻表（格式替换后）
 
-| 日 | 视频素材 | 时长 | 美东 | 生成镜头数 |
-|----|---------|------|------|-----------|
-| 周一 11/30 | V-M1 起源篇·14 天宣战 | 18s | 19-22 | 4 |
-| 周二 12/1 | V-M2 差距羞辱（GA 日） | 15s | 19-22 | 3 |
-| 周三 12/2 | V-M3 录屏静音流 | 15s | 12-13 或 19-22 | 0（纯后期） |
-| 周四 12/3 | V-M4 陪审团驳回 | 18s | 19-22 | 4 |
-| 周五 12/4 | V-M5 周末赌注 | 15s | 19-22 | 3 |
-| 周六-日 | 连胜卡图集填充 | — | 平峰 | 0 |
+| 日 | 视频素材 | 时长 | 美东 | 生成方式 |
+|----|---------|------|------|---------|
+| 周一 11/30 | V-M1 起源篇·14 天宣战 | **24s** | 19-22 | **一条提示词一次生成**（预留 3-4 次重跑） |
+| 周二 12/1 | V-M2 差距羞辱（GA 日） | 15s | 19-22 | 一条提示词一次生成 |
+| 周三 12/2 | V-M3 录屏静音流 | 15s | 12-13 或 19-22 | **不用 AI**（真实录屏 + CapCut） |
+| 周四 12/3 | V-M4 陪审团驳回 | 18s | 19-22 | 一条提示词一次生成 |
+| 周五 12/4 | V-M5 周末赌注 | 15s | 19-22 | 一条提示词一次生成 |
+| 周六-日 | 连胜卡图集填充 | — | 平峰 | 不用 AI（图集） |
 
-**平台分发**：TikTok 首发 → 24h 后 YT Shorts + IG Reels（IG 上同时发图集版轮播，双版本 A/B 测格式）。周日批量生成全周镜头（14 次 AI 生成），周一-周五每天只需 CapCut 组装 20 分钟。
+> **⚠️ 全季统一改成"一条提示词 = 一条片"（v10 起）**：不再拆镜头分段生成——分段必漂移（桌面物件挪位、光线变色、袖口换色），且漂移了没法后期修。每条片以基准图做首帧、一次生成到底，出错**整条重跑**。
+
+**平台分发**：TikTok 首发 → 24h 后 YT Shorts + IG Reels（IG 上同时发图集版轮播，双版本 A/B 测格式）。周日批量生成（4 条 × 3-4 次重跑 ≈ 12-16 次），周一-周五每天只需 CapCut 叠字幕+配音 20 分钟。
 
 ## 一致性检查（每周视频发出前过一遍）
 
-- [ ] 桌面物件与基准照一致（笔/杯/台灯位置没漂移）
+- [ ] 桌面物件与 `desk-main.jpg` 一致（笔/杯/台灯/纸堆位置没漂移）
 - [ ] **袖口身份对**（我=深灰连帽衫 / 她=米白针织，每支视频都不能混）
 - [ ] 比分与主表连续（**V-M1 从 me 3 : her 0 开局** → 后续每天只增不减，分差自然拉开）
 - [ ] 倒计时数字正确（**day 1 = 14 days**：14 → 13 → 12 → 10）
-- [ ] 周二手持晨光版基准照已补拍
+- [ ] **一周视频一起过一遍**：四条片摆在一起看，桌面颜色/亮度不能有明显跳变
+- [ ] **纸面零文字**：任何一帧放大 200% 都读不出字母、数字、汉字（只允许红 ✗ / 红 ✓）
+- [ ] **无后期修图痕迹**：字幕干净、纸面没有糊斑、手机屏没有贴图错位
 - [ ] 每支结尾都有 "lmk" 系 CTA

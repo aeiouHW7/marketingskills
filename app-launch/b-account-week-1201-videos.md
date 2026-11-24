@@ -56,7 +56,9 @@
 - ❌ 折纸条被拿走 = 交出权力（符号）
 - ✅ 我把一张任务单推到她面前，她当场在上面画一个红色大叉 = 我申报，她驳回（字面）
 
-**叙事口径（定稿）**：不做"她带我进步"这一层。零准备的我，主动向全 A 室友宣战，理由只有一个——我不服她。规则是硬的：互相审批、驳回不许申诉、赛季末分高者胜。
+**叙事口径（定稿）**：不做"她带我进步"这一层。零准备的我，主动向全 A 室友宣战，理由只有一个——我不服她。规则是硬的：**任务需对方认可才入账、驳回不可申诉、14 天结束时任务得分高者胜**；结尾立场是**进攻**——"我要暴学超过她"，不是"我完了"。
+
+> **产品规则口径卡（所有内容统一，不许改写）**：得分只来自**被对方认可的任务**；不认可不入账；驳回不能申诉；胜负只看**这 14 天的任务得分**。不出现"让分""加分""赛季奖励"等产品里没有的规则。
 
 ---
 
@@ -75,8 +77,8 @@
 > **钩子铁律**：①前 3 秒不提 app 名；②第一句必须含冲突或代价（"power to reject"是代价）；③画面必须有对应实物动作同步发生，不能只有字幕在飘。
 
 **配音稿**（约 17 秒，冷静嘴硬、略带自嘲的年轻声）：
-> "I gave my straight-A roommate the power to reject my homework. She said yes. Fourteen days to finals, and I've done nothing. She's forty hours in — I'm at zero. Same rules: she judges mine, I judge hers. No appeals. Whoever has more points when finals end wins the season. Who's cooked? Let me know."
-> （我把驳回我作业的权力交给了我那个全 A 室友。她答应了。距期末 14 天，我一个字没看。她已经干了四十小时，我零小时。同一套规则：她审我的，我审她的。不许申诉。期末考完谁分高谁赢这个赛季。我完了吗？评论区说。）
+> "I gave my straight-A roommate the power to reject my homework. She said yes. Fourteen days to finals, and I've done nothing. She's forty hours in — I'm at zero. Same rules: every task I log needs her approval. No appeals. Fourteen days, highest task score wins. And I'm out-studying her. Am I delusional? Let me know."
+> （我把驳回我任务的权力交给了我那个全 A 室友。她答应了。距期末 14 天，我一个字没看。她已经干了四十小时，我零小时。同一套规则：我每条任务都要她认可。不许申诉。14 天，任务得分高者胜。而我要暴学超过她。我是不是疯了？评论区说。）
 
 ### 全片统一的"手部身份证"
 
@@ -107,13 +109,13 @@
 | **1·钩子：我申报，她当场驳回** | 0-3s | desk-overhead.jpg | 灰袖手把横线任务单推到桌子右侧 → **米白袖手拿红笔立刻在单子上画一个大叉**，笔一放（我递→她驳，因果一眼看懂） | **"I gave my straight-A roommate the power to reject my homework."** | 第一、二句 |
 | **2·代价：空白页** | 3-8s | desk-overhead.jpg | 灰袖手连翻两页笔记本，**两页都是空白**；手指在空白处敲两下，停住 | **"14 days to finals. I've done nothing."** | 第三句 |
 | **3·差距：四十小时 vs 零** | 8-13s | desk-side.jpg | 米白袖手把**一厚叠便利贴**放到我的空白笔记本旁边（一厚一空同框）；灰袖手把自己的笔放下 | **"she's 40 hrs in. I'm at zero."** | 第四句 |
-| **4·规则与比分开局** | 13-18s | desk-lowangle.jpg | 灰袖手用黑笔在纸上写 "0 : 0"，笔尖敲两下；手机屏亮起 | **"same rules. 0 : 0. 14 days. who's cooked? lmk 👇"** | 第五句至结尾 |
+| **4·规则 + 宣战** | 13-18s | desk-lowangle.jpg | 灰袖手用黑笔写下 "0 : 0"，笔尖**在下面划两道加重下划线**（下战书），笔尖敲两下；手机屏亮起 | **"14 days. highest task score wins. I'm out-studying her. am I delusional? lmk 👇"** | 第五句至结尾 |
 
 **每一拍的因果（自查用）**：
 1. 我递任务单 → 她画叉 = **我的任务要她批**
 2. 翻两页都是白 = **我零准备**
 3. 一厚叠 vs 一本空白 = **差距有多大**
-4. 写下 0:0 → **同一规则，从零开始，14 天**
+4. 写下 0:0 并加重划线 → **从零开始，14 天后任务得分高者胜，而我打算暴学**
 
 > 四个动作全部是字面因果，不需要任何解释；没有一张纸代表"权力"这种抽象设计。
 
@@ -132,10 +134,10 @@
 | 音效 | 翻纸声、红笔划纸（最响，放大到 70%）、便利贴落桌三道声音；笔尖敲纸两次对齐 beat（ASMR 是这个赛道的隐性钩子） |
 | 配音 | ElevenLabs 粘贴上面稿子，语速压到 0.95，句间留 0.3 秒 |
 | BGM | 低调 phonk，20%；红笔画叉那一下留 0.4 秒静音 |
-| 结尾 | 最后一帧定格 0.5 秒，让 "who's cooked? lmk" 有反应时间 |
+| 结尾 | 最后一帧定格 0.5 秒，让 "am I delusional? lmk" 有反应时间（自嘲式提问比"我完了"更能钩评论） |
 
-**Caption**：`14 days out and I've done literally nothing. so I made it her problem 😭`
-**置顶评论**：`she said "fine, but I'm not going easy." I'm scared.`
+**Caption**：`14 days out and I've done literally nothing. watch me try to out-study her 😭`
+**置顶评论**：`she said "you have 14 days. good luck." the disrespect.`
 **标签**：#studytok #finalsweek #deadweek #collegelife #studymotivation
 
 ---

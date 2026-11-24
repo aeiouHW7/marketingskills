@@ -1,7 +1,7 @@
 # B 自律号 · GA 周简短小视频包（11/30 – 12/6 · 视频版）
 
-> 配套：`b-account-week-1201.md`（叙事节拍/比分/人设卡的母本）+ `v1-ai-video-prompts.md` V2（场景基准照方案）。
-> **本文档 = 周包每一天的视频实现版**：每天一条 15-24 秒简短小视频，书桌戏、无真人开口、AI 配音（ElevenLabs），LibTV 图生视频（**AI 生成的桌面基准图做首帧**，单次 ≤30s）。
+> 配套：`b-account-week-1201.md`（叙事节拍/比分/人设卡的母本）。**基准图与视频提示词以本文档 V-M1 节为准**（`v1-ai-video-prompts.md` 已降级为思路存档，其分镜头写法不要照抄）。
+> **本文档 = 周包每一天的视频实现版**：每天一条 15-24 秒简短小视频，书桌戏、无真人开口、AI 配音（ElevenLabs），LibTV 图生视频（**Seedream 5.5 生成的桌面基准图做首帧**，单次 ≤30s）。
 > 人设/比分/倒计时**直接从周包母本取数**，不另起炉灶——视频版和图集版是同一故事的两种格式（视频发 TikTok/Shorts，图集版发 IG 轮播，双版本 A/B）。
 > **⚠️ V-M1（2026-11-24 v10 定稿）口径，后续 V-M2~V-M5 待同步**：
 > ①**Day N of 14，days left = 15 − N**（Day 1 = 14 days left；Day 14 = 1 day left；12/14 第一场期末开考 = 结算）；
@@ -10,14 +10,15 @@
 > ④**人物动机一句话**：我要用她的标准赢她（所以把裁判权递给她，同时不服她）；
 > ⑤**任务 = 可交付的成果，不是时长**（20 道题、一章笔记、一套卷子）——**全季禁止"我学了 X 小时"当证据**；
 > ⑥**补救路径只有一条**：驳回**不可申诉**（争辩没用），但**可以修改申报/补证据后重新提交**——不许演"申诉成功"；
-> ⑦**生成规范（v10 起全季执行）**：**一条提示词一次生成整条片**（不拆分拼接）；**纸面零文字**（只允许她的 ✗ 和 ✓，笔记本只给页边）；**真人场景零 UI**（手机屏幕朝下）；**禁止用后期糊字救画面**。
+> ⑦**生成规范（v10 起全季执行）**：**一条提示词一次生成整条片**（不拆分拼接）；**纸面零文字**（只允许她的 ✗ 和 ✓，笔记本只给页边）；**真人场景零 UI**（手机屏幕朝下）；**禁止用后期糊字救画面**；
+> ⑧**工具分工**：**静态基准图用 Seedream 5.5**（图像，中文提示词，9:16 2K，参考图生图做机位变体）；**视频用 LibTV**（图生视频，把 Seedream 的图当首帧，单次 ≤30s）。
 
 ---
 
 ## 〇、先决条件（同 V2 提示词包）
 
-1. **4 张桌面基准图已生成**存 `app-launch/scene-assets/`（`desk-main` / `desk-side` / `desk-phone` / `desk-low`）——提示词见 V-M1「桌面基准图」节，**一天内一次做完，全季复用**
-2. **补一张晨光版**：`desk-main-morning.jpg`（用 `desk-main.jpg` 做图生图，只把光线换成拉开窗帘的清晨冷光、物件一点不动——周二那支用）
+1. **4 张桌面基准图已生成**存 `app-launch/scene-assets/`（`desk-main` / `desk-side` / `desk-top` / `desk-low`）——提示词见 V-M1「桌面基准图」节，**一天内一次做完，全季复用**
+2. **补一张晨光版**：`desk-main-morning.png`（用 Seedream 上传 `desk-main.png` 做参考图编辑，**只改光线**：换成拉开窗帘的清晨冷光；物件、机位、构图全部保持不动——周二那支用）
 3. **拍摄制服（强制项）**：我=深灰连帽衫、她=米白针织开衫，两件固定不换——不露脸的内容里，**袖口就是角色身份**，跨视频必须一致
 4. 场景一致性铁律：**锁的是桌子和物件；光线可以按剧情换（夜=台灯暖光，晨=窗帘冷光），但物件位置一根笔都不许挪**
 5. **生成方式（v10 起）**：每条片 = **一条提示词 + 一次生成**，首帧固定为基准图；**不做分段拼接**，出错整条重跑
@@ -131,104 +132,145 @@
 
 ---
 
-### 桌面基准图（先生成 4 张，全季所有视频都引用）
+### 桌面基准图（用 Seedream 5.5 生成 4 张，全季所有视频都引用）
 
-**逻辑**：LibTV 图生视频 → **首帧图决定桌面长相**。基准图一旦定下来，后面每条视频的桌子、台灯、水杯、笔、纸的位置 100% 不变，一致性问题在源头解决。
+> **生成工具：Seedream 5.5**（图像）。提示词按 Seedream 的写法来：**描述照片，不描述概念**——主体、场景、材质、光、镜头一样不少；**每张参考图只分配一个用途**；**每次编辑只改一处，并写清"保持不变"的清单**；结尾列"不要出现"清单。
+>
+> **⚠️ Seedream 5.5 最大的坑，对我们来说正好相反**：它家**小字渲染特别强**，你写进引号里的字它会原样印上去。所以本片提示词**一个引号都不能有**、结尾必须写死"画面中没有任何文字/字母/数字/符号/印刷痕迹"——否则它会在便签上"贴心地"帮你写字，正好毁掉我们的零文字设计。
 
-#### 生成顺序（这一步别搞错，顺序决定一致性）
+#### 空间定稿（一次定下来，全季不变）
 
-1. **先生成主图**（俯拍 45°）——这是唯一一张"从零生成"的
-2. **再用主图做图生图**，只改机位、其余描述原样不动，得到侧图 / 手机视角 / 低角度
+| 项 | 设定 |
+|----|------|
+| 场地 | **我的宿舍书桌**，**桌子靠墙**，左侧是窗（冷光从左边来） |
+| 我 | **坐在桌子左下**（座位在左下角外侧），右手从画面**下缘偏左**入画 |
+| 她 | **站在桌子右下角**，俯身越过桌角来看，右手从画面**右下角斜下**入画 |
+| 动作方向 | 我从左下 **推到右下**（她面前），她审完 **推回桌面中间** |
+| 机位 | 在我斜后上方，**俯拍 50°**——同时看到桌面、上缘的墙、和她站位那一角 |
 
-> 为什么不四张都从零生成：四段独立提示词出来的桌面，木纹走向、水杯位置、台灯角度一定不同，四张图互相对不上，等于白做。**一张主图派生出全部机位**，物件布局天然一致。
+> **这个站位自带一层意思**：**她站着、我坐着**。不用一句台词，观众就能感觉到谁在审谁。
 
-#### 图 1 · 主图（俯拍 45°，90% 的镜头都用这张）
+#### 生成顺序（顺序决定一致性，别搞错）
 
-```
-Realistic photo, shot on iPhone 15 Pro main camera, vertical 9:16, 3024x4032, f/1.8,
-natural indoor lighting, no filter, no color grading, slight sensor noise.
+1. **图 1 从零生成**（唯一一张纯文字生图）
+2. **图 2/3/4 全部走"参考图生图"**：上传图 1 当参考图，只改机位，写清"其余保持不变"
 
-Subject: a small wooden desk in a student room, shot from above at a 45-degree angle,
-the desk filling the lower two thirds of the frame, a dark blurred room in the upper third.
+> Seedream 5.5 的原生能力正好适合这事：它**只改你点名要改的部分**，没提到的像素级保留。所以图 2/3/4 的木纹、杯子、插座、充电线会跟图 1 完全一致——这比四张各自从零生成强得多。
 
-Desk surface: light oak wood, fine straight grain running left to right, matte finish,
-faint water ring near the right edge, two or three shallow scratches, one small dark
-knot in the grain near the bottom left corner.
+#### Seedream 参数（每张都一样）
 
-Objects, fixed positions (this exact arrangement must never change):
-- upper left: a matte black metal desk lamp with a round flat base and a short adjustable
-  arm, warm 3200K light spilling from it across the desk toward the lower right
-- upper right: a white ceramic mug, handle pointing right, a thin dried coffee ring
-  inside the rim
-- centre: a small plain notepad with faint horizontal rules, blank, no writing
-- lower left (the owner's side): a stack of about twenty used loose sheets with slightly
-  curled uneven edges, seen edge-on, and two pens lying parallel beside it, one black,
-  one dark blue, caps on
-- lower right: a dark phone lying face down, screen not visible
-- at the far right edge, half out of frame: a folded pair of grey socks
+| 参数 | 值 |
+|------|-----|
+| 尺寸 | **1584 × 2816（9:16 竖版，2K）** |
+| 输出 | PNG |
+| 背景 | opaque（不透明） |
+| 参考图 | 图 1 用 0 张；图 2/3/4 **各上传 1 张（图 1）** |
+| 张数 | 每张先出 **4 张备选**，挑最像的一组，剩下 3 张删掉（别留着混淆） |
 
-Light: single warm lamp from the upper left, sharp falloff toward the lower right
-corner which sits in soft shadow; faint cool spill from an off-frame window at the far
-left. Late evening, quiet, lived-in.
+---
 
-Camera: static, slightly off-axis (not perfectly centred), moderate depth of field with
-the desk surface in focus and the background room falling into soft blur.
-
-No people, no hands, no text anywhere.
-```
-
-**中文要点**：浅橡木桌面、木纹横向、右缘一道水渍环、左下一个小木节；**台灯在左上**（黑色圆盘底座、暖光向右下衰减）、**马克杯右上**（杯口有咖啡渍环）、便签本居中（横线、空白、**不写字**）、**左下角 = 我的地盘**（约二十张用过的纸，只看得到页边卷角 + 两支笔平行放）、手机右下**屏幕朝下**、最右缘一双灰袜子半出画。
-
-> **左右分区是这一版新加的关键**：**我在左下、她在右上**。这条一旦定下来，"我推过去→她接→推回来"整个动作逻辑就有方向了；不定的话 AI 会把两只手随机丢在画面里，动作看起来像两个人抢东西。
-
-#### 图 2 · 侧 45°（用于"推东西过去"这类横向动作）
-
-用图 1 做图生图，只替换这段相机描述：
+#### 图 1 · 主图（俯拍 50°）——直接粘贴
 
 ```
-Change only the camera: now a three-quarter side view at 45 degrees from the left,
-lens height about 25 cm above the desk, the same desk and the same objects in exactly
-the same positions, the lamp now in the left foreground slightly out of focus, the room
-behind falling into soft blur. Everything else identical to the reference image.
+一张真实的室内照片，竖版 9:16。
+
+【场景】大学宿舍里的一张窄书桌，紧靠一面墙。相机位于坐在桌前那个人的左肩后上方，以约 50 度俯角向下拍桌面。画面上方约四分之一是墙，中间和下方是桌面，桌子前沿沿画面底边横过来。
+
+【墙面】平涂的哑光白漆，略微泛旧，靠下有一道浅浅的灰色擦痕。桌面上方墙面上有一个白色双孔电源插座，一根黑色充电线插在上面，松松地垂成一道弧线，线头搭在桌面上。画面最左侧虚化：窗外透进来的昏暗冷灰色天光、一点窗台边缘、一点窗帘布料。那里的一切都是柔的、暗的。
+
+【桌面】浅橡木贴面，细直的横向木纹，哑光，靠近右缘有一圈干掉的水渍印，前沿有两三道浅划痕，左下木纹里有一个深色小木节。
+
+【桌上物品与固定位置】
+- 靠墙左上角：一盏哑光黑金属台灯，圆形扁平底座，短的可调节灯臂，灯罩向下压着桌面，暖色 3200K 的光从灯罩里泼在桌面上，往右侧逐渐变暗。
+- 靠墙右上角：一只白色陶瓷马克杯，杯把朝右，杯口内侧有一圈干掉的咖啡渍。
+- 靠墙上部中间：一个深灰色小笔筒，里面插着两支笔，一支黑色，一支深蓝色。
+- 桌面正中：一本很小的空白横线便签本，页面是空的，什么都没有。
+- 左下角、也就是坐着的那个人的一侧：约二十张用过的散页纸叠在一起，纸张边缘微微卷起、参差不齐，只能看到纸的侧边；旁边一部深色手机屏幕朝下扣着，看不见屏幕。
+- 右下角、也就是站着的那个人一侧：只有裸露的木头桌面，空无一物。
+
+【光】只有左上角一盏暖色台灯作为主光，光扫过桌面、往右下角渐渐变暗；最左侧有昏暗的冷色窗光渗进来；桌面右下角横着一道边缘柔和的淡影，像是有人站在桌旁投下来的，但那个人不在画面里。傍晚，安静，有人住过的痕迹。
+
+【镜头】50mm 焦段，中等景深：桌面和便签本清晰，墙面和杂物边缘柔和虚化。构图略有点歪，不完全水平，像是手机临时垫在几本书上拍的。真实的手机直出质感，轻微噪点，没有滤镜、没有调色、没有打光修饰。
+
+【不要出现】画面中没有任何文字、字母、数字、汉字、标点、符号、logo、水印、贴纸、便签上的字迹；没有任何人、手、脸、身体；没有任何屏幕发光、任何界面、任何UI元素。
 ```
 
-#### 图 3 · 手机视角（平板高度，俯视 70°，用于"她审我"的压迫感）
+**中文核对要点**：
+
+- **墙面三件套必须有**（"这是真宿舍"的证据，缺了就像影棚）：泛旧白漆 + 灰擦痕、**白色双孔插座**、**插着垂下来的黑色充电线**
+- **左侧虚化的窗**：昏暗冷光 + 窗台边 + 窗帘角（不出现完整窗户，抢画面）
+- **桌面**：浅橡木、横向木纹、右缘干水渍印、前沿浅划痕、左下小木节
+- **物件全部靠墙排**，中间动作区留空：台灯左上、马克杯右上、笔筒上中、便签正中
+- **左下 = 我的地盘**：约二十张用过的纸（**只看得到侧边**）+ 手机屏幕朝下
+- **右下 = 她的站位，必须空成裸木**（她要俯身过来，不能有东西挡）
+- **右下角一道柔边淡影**：站着那个人的影子（把她的存在预埋进基准图）
+- 镜头语言必须写：**50mm、中等景深、轻微噪点、构图略歪、手机直出**（Seedream 5.5 对光影和材质的提升最大，写清楚就会给到位）
+
+---
+
+#### 图 2 · 侧 50°（从我座位侧后方，用于"推过去"这类横向动作）
+
+**操作**：上传图 1 作参考图 → 模式选"参考图生图" / 图像编辑 → 粘贴：
 
 ```
-Change only the camera: now a near-overhead view at about 70 degrees, lens height
-roughly 40 cm, framing tighter so the notepad and the stack of sheets fill the centre,
-the lamp glow entering from the top left corner. Same desk, same objects, same positions.
+参考图 1 是这张宿舍书桌。只改相机位置，其他一切保持不变。
+
+把相机向左后方拉远一点，改成从桌子左侧约 3/4 侧后方拍过去的 50 度侧视，镜头高度离桌面约 30 厘米。这样那面墙变成一条斜着穿过画面上方的面，左侧窗外透进来的冷光在画面最左缘成了一道柔和亮边。
+
+必须保持不变：桌面木纹走向、右缘的水渍印、前沿的划痕、左下的小木节、台灯及其位置和光的方向、白色马克杯及其咖啡渍、深灰笔筒和两支笔、正中的空白便签本、左下那叠纸和屏幕朝下的手机、右下角空着的裸木桌面、右下角那道柔边淡影。
+
+不要出现：画面中没有任何文字、字母、数字、符号、logo、水印；没有任何人、手、脸；没有任何发光的屏幕或界面。
 ```
 
-#### 图 4 · 低角度（桌沿平视，用于结尾定格）
+#### 图 3 · 正俯（约 80°，用于"她审我"的压迫感）
+
+**操作**：同样上传图 1 作参考图。
 
 ```
-Change only the camera: now a low angle with the lens almost level with the desk
-surface, roughly 8 cm above it, looking across the desk toward the blurred room,
-the mug and the stack of sheets in the foreground slightly blurred, the notepad edge
-in the middle, warm lamp light raking across the wood grain. Same objects, same positions.
+参考图 1 是这张宿舍书桌。只改相机位置，其他一切保持不变。
+
+把相机移到桌面正上方偏左，改成接近垂直的俯视，约 80 度，镜头高度离桌面约 55 厘米。桌面几乎填满整个画面，那面墙被压成画面最顶上一条细窄的边。构图收紧，让正中的空白便签本和右下角空着的裸木桌面成为画面的中心。
+
+必须保持不变：木纹、水渍印、划痕、木节、台灯及暖光方向、马克杯、笔筒、便签本、左下那叠纸和手机、右下角空桌面和那道柔边淡影、左侧渗进来的昏暗冷光。
+
+不要出现：任何文字、字母、数字、符号、logo、水印；任何人、手、脸；任何发光屏幕或界面。
+```
+
+#### 图 4 · 低角度（桌沿平视，用于开场和结尾定格）
+
+**操作**：同样上传图 1 作参考图。
+
+```
+参考图 1 是这张宿舍书桌。只改相机位置，其他一切保持不变。
+
+把相机压低到几乎与桌面齐平，镜头离桌面约 8 厘米，朝着那面墙的方向横着看过去。桌子前沿在画面近处虚化成一道模糊的边，白色马克杯和深灰笔筒在浅色墙面前形成剪影，台灯的暖光斜斜地扫过木纹，右下角是空的、光线柔和。
+
+必须保持不变：木纹走向、右缘水渍印、台灯位置和暖光、马克杯与笔筒的轮廓与位置、便签本、左下那叠纸和手机、右侧墙上那道插座的轮廓。
+
+不要出现：任何文字、字母、数字、符号、logo、水印；任何人、手、脸；任何发光屏幕或界面。
 ```
 
 #### 存图与引用规则（全季固定）
 
 | 项 | 规则 |
 |----|------|
-| 文件名 | `desk-main.jpg` / `desk-side.jpg` / `desk-phone.jpg` / `desk-low.jpg`，存 `app-launch/scene-assets/` |
-| 首帧 | **每条视频、每个生成请求都用 `desk-main.jpg` 做首帧**（除特殊机位） |
+| 文件名 | `desk-main.png` / `desk-side.png` / `desk-top.png` / `desk-low.png`，存 `app-launch/scene-assets/` |
+| 首帧 | **每条视频、每个生成请求都用 `desk-main.png` 做首帧**（特殊机位用对应那张） |
 | 提示词第一句 | 永远固定为 `Continue exactly from the provided reference frame.` |
-| 参数 | 首帧一致性/参考强度**拉到最高**；只要桌面开始漂移（物件挪位、木纹变色）就立刻停下重来，**不要试图后期修** |
-| 换季 | 换赛季才换桌面档案；赛季中换道具 = 重出 4 张基准图（旧视频不复用） |
-
+| 参数 | 首帧一致性/参考强度**拉到最高**；只要桌面开始漂移（物件挪位、木纹变色、墙不见了、墙上多出字）就立刻停下重来，**不要试图后期修** |
+| 禁止复用 | 别把 Seedream 出图时的"多张备选"混着用——一组视频只能用**同一张** `desk-main.png` |
+| 换季 | 换赛季才换桌面档案；赛季中换道具 = 重出 4 张基准图 |
 ---
 
 ### 手部身份证 + 本集道具
 
-| 角色 | 袖口 | 饰品 | 用手 |
-|------|------|------|------|
-| 我 | **深灰连帽衫袖口**（全程不换） | 无戒指 | 右手 |
-| 她 | **米白针织开衫袖口**（全程不换） | 无戒指 | 右手 |
+| 角色 | 袖口 | 位置 / 姿态 | 手的入画角度 | 用手 |
+|------|------|-----------|------------|------|
+| 我 | **深灰连帽衫袖口**（全程不换） | **坐**在桌子**左下** | 从**画面下缘偏左**、低角度、贴桌面伸进来 | 右手 |
+| 她 | **米白针织开衫袖口**（全程不换） | **站**在桌子**右下角**、俯身越过桌角 | 从**画面右下角斜下**伸进来（角度比坐姿陡、袖口露出多一点） | 右手 |
 
 > 不露脸的内容里，**袖口就是角色身份**，整个赛季保持一致。
+> **两个入画角度必须不一样**——她是站着俯身的，手是从高处斜下来的。要是两只手角度一模一样，AI 那种"对称感"一眼就假。这个差异本身就是防 AI 感的细节。
 
 | 道具 | 作用（观众一眼看懂） | 关键约束 |
 |------|-------------------|---------|
@@ -253,14 +295,14 @@ in the middle, warm lamp light raking across the wood grain. Same objects, same 
 
 | 拍 | 时间 | 画面动作（字面可读，不需要解释） | 屏幕大字 | 观众看到的因果 |
 |----|------|------------------------------|---------|--------------|
-| **1 · 交权** | 0-4s | 灰袖手把**空白便签**推到桌子右侧 → 米白袖手**接过、拿起红笔**（笔尖悬着没落） | "I gave my roommate the power to reject my homework." → "Day 1. She already used it." | 权力真的交到她手上了 |
-| **2 · 驳回** | 4-9s | 灰袖手在桌面上**举起三根手指** → 米白袖手**手掌朝下左右摆两下**（不行）→ **红笔画两道叉** → 便签推回左侧 | **"claimed 3 hrs. she asked: 3 hrs of WHAT? ✗"** | 报时长 → 被否 → 驳了 |
-| **3 · 我改** | 9-14s | 灰袖手把那**一叠用过的纸推到她面前**，便签压在纸上 → 手退回画外 | "no appeals. so I stopped counting hours." | 我不吵了，我交东西 |
+| **1 · 交权** | 0-4s | 灰袖手（左下·坐着）把**空白便签**推到**桌面右下角** → 米白袖手（右下·站着俯身）**两指按住便签、拿起红笔**（笔尖悬着没落） | "I gave my roommate the power to reject my homework." → "Day 1. She already used it." | 权力真的交到她手上了 |
+| **2 · 驳回** | 4-9s | 灰袖手在桌面左侧**举起三根手指** → 米白袖手**手掌朝下左右摆两下**（不行）→ **红笔画两道叉** → 便签**推回桌面中间** | **"claimed 3 hrs. she asked: 3 hrs of WHAT? ✗"** | 报时长 → 被否 → 驳了 |
+| **3 · 我改** | 9-14s | 灰袖手把那**一叠用过的纸从左下推到她面前（右下）**，便签压在纸上 → 手退回下缘 | "no appeals. so I stopped counting hours." | 我不吵了，我交东西 |
 | **4 · 认可** | 14-19s | 米白袖手拇指**拨动纸页边缘、快拨三下**（纸页成扇形掀起，只见页边）→ 拿起红笔**打一个勾** | "she checked the work. ✓" | 她验的是成果 → 通过 |
-| **5 · 比分** | 19-24s | 米白袖手把便签**翻过来（叉朝下）** → 灰袖手**食指在桌面敲两下** → 定格 | "day 1: me 3 · her 0. who's trying this? lmk 👇" | 判决结束，第一天我领先 |
+| **5 · 比分** | 19-24s | 米白袖手把便签**翻过来（叉朝下）**、手退出右下角 → 灰袖手**食指从下缘左侧敲桌两下** → 定格 | "day 1: me 3 · her 0. who's trying this? lmk 👇" | 判决结束，第一天我领先 |
 
 **五拍的因果链（自查用）**：
-1. 我推单子 → 她接、拿笔 = **权力在她**
+1. 我从左下推到右下 → 她按住、拿笔 = **权力在她手上**
 2. 我举三指 → 她摆手 → 画叉 → 推回 = **三小时不算数**
 3. 我推一叠纸 = **我换成交实物**
 4. 她拨页边看 → 打勾 = **东西过关**
@@ -272,7 +314,7 @@ in the middle, warm lamp light raking across the wood grain. Same objects, same 
 
 ### 整段视频提示词（一条 · 直接粘贴 LibTV · 24 秒）
 
-> 首帧图：`desk-main.jpg` ｜ 一致性拉到最高 ｜ 时长 24s ｜ 9:16
+> 首帧图：`desk-main.png` ｜ 一致性拉到最高 ｜ 时长 24s ｜ 9:16
 
 ```
 Continue exactly from the provided reference frame. One single continuous shot,
@@ -285,57 +327,68 @@ texture with visible pores and fine lines, short unpolished fingernails, slight 
 handheld micro-movement, the camera essentially static with only breathing-level drift.
 
 SCENE (locked)
-The wooden student desk from the reference frame, unchanged: light oak with fine
-horizontal grain, matte black desk lamp at the top left throwing warm 3200K light toward
-the lower right, white ceramic mug with a dried coffee ring at the top right, a small
-plain ruled notepad in the centre, a black pen and a dark blue pen lying parallel on the
-left, a stack of about twenty used loose sheets on the right with slightly curled edges,
-a dark phone lying face down at the bottom right, faint cool window spill from the far
-left. Late evening, lived-in room, background falling into soft blur.
-Do not add, remove, or move any object. Do not change the composition.
+My dorm desk against the wall, exactly as in the reference frame and unchanged: the pale
+matte wall filling the top quarter of the frame with a white double power outlet and a
+black charging cable hanging from it in a loose loop; dim cool window light entering from
+the far left; light oak veneer with fine horizontal grain and one faint water ring near
+the right edge; the matte black desk lamp against the wall at the upper left, shade tilted
+down, warm 3200K light spilling across the surface; the white ceramic mug against the wall
+at the upper right with a dried coffee ring inside the rim; the dark grey pen pot against
+the wall at the upper centre holding one black and one dark blue pen; a small plain ruled
+notepad, blank, in the centre of the desk; the stack of about twenty used loose sheets and
+the dark phone lying face down at the lower left; the lower right corner of the desk bare
+and empty.
+Do not add, remove, or move any object. Do not remove the wall, the outlet, or the cable.
+Do not change the composition.
 
 CAST (hands only, never above the wrist)
-The owner, wearing a dark grey hoodie cuff, sits at the LOWER LEFT and every one of his
-actions enters the frame from the lower left corner.
-The roommate, wearing a cream knit cardigan cuff, sits at the UPPER RIGHT and every one of
-her actions enters the frame from the upper right corner.
-Their hands never overlap, never cross, and never swap sides.
-No rings, no watches, no jewellery. Each actor uses only the right hand. Maximum two hands
-in frame at any moment.
+The owner wears a dark grey hoodie cuff. He is SEATED at the lower left corner of this desk,
+so his hand enters the frame from the bottom edge on the left side, low, close to the
+surface, and slightly foreshortened as it reaches across.
+The roommate wears a cream knit cardigan cuff. She is STANDING at the lower right corner of
+the desk and leaning in over it, so her hand enters the frame from the lower right corner at
+a steeper downward angle, and a little more of her sleeve is visible than his.
+Their hands never overlap, never cross, and never swap corners.
+No rings, no watches, no jewellery, no faces, no forearm above the cuff. Each uses only the
+right hand. Maximum two hands in frame at any moment.
 
 BEATS
-0.0-4.0s  A dark grey hoodie sleeve slides in from the lower left and pushes a small blank
-          ruled notepad into the centre of the desk. A cream cardigan sleeve comes down
-          from the upper right, takes the notepad, and picks up a red marker, the tip
-          hovering above the paper without touching it.
-4.0-9.0s  The grey sleeve raises three fingers, held low above the wood on the left side.
-          The cream sleeve rotates a flat palm and sweeps it left and right twice above the
-          centre, a clear refusal. The red marker then draws a firm X across the notepad,
-          one stroke, then a second stroke crossing it, and the cream sleeve pushes the
-          notepad back toward the lower left.
-9.0-14.0s The grey sleeve slides the stack of used sheets from the lower left up into the
-          centre, the notepad resting on top of the stack, then withdraws back out of frame.
-14.0-19.0s The cream sleeve's thumb riffles the edge of the paper stack three times, the
-          pages fanning open briefly so only their edges are visible, the flat faces never
-          turning toward the lens. The hand then picks up the red marker and draws a single
-          check mark on the notepad.
-19.0-24.0s The cream sleeve turns the notepad over, face down, covering the X, and
-          withdraws to the upper right. A grey hoodie index finger comes in from the lower
-          left and taps the wood twice, then the frame holds still, the warm lamp light
-          settling on the desk.
+0.0-4.0s  A dark grey hoodie sleeve slides in from the bottom left and pushes the small
+          blank ruled notepad across the wood toward the lower right corner of the desk.
+          A cream cardigan sleeve comes down from the lower right, presses two fingers flat
+          on the notepad for a moment, then picks up a red marker, the tip hovering above
+          the paper without touching it.
+4.0-9.0s  The grey sleeve lifts and holds up three fingers, kept low above the wood on the
+          left side. The cream sleeve turns a flat palm downward and sweeps it left and
+          right twice above the notepad, a clear refusal. The red marker then draws a firm
+          X on the notepad, one stroke, then a second stroke crossing it. The cream sleeve
+          pushes the notepad back toward the middle of the desk.
+9.0-14.0s The grey sleeve slides the stack of used sheets across the wood toward the lower
+          right, the notepad resting on top of the stack, then withdraws down out of frame.
+14.0-19.0s The cream sleeve's thumb riffles the top edge of the paper stack three times, the
+          pages fanning open briefly so only their edges show, the flat faces never turning
+          toward the lens. The hand then picks up the red marker and draws a single check
+          mark on the notepad.
+19.0-24.0s The cream sleeve turns the notepad over, face down, covering the X, and lifts
+          away out of the lower right corner. A grey hoodie index finger comes in from the
+          bottom left and taps the wood twice. The frame then holds still, the warm lamp
+          light settling on the desk.
 
 CAMERA
-Fixed-offset overhead angle at roughly 45 degrees, lens height about 30 cm, moderate depth
-of field with the desk and hands sharp and the room blurred behind. The notepad stays in
-the centre of the frame throughout, the lower left corner reserved for the owner's hand and
-the upper right corner for the roommate's hand. No zoom, no pan, no dolly, no rack focus,
-no handheld shake beyond breathing level, no camera movement of any kind.
+Static camera placed behind and slightly above the owner's left shoulder, looking down at
+the desk at about 50 degrees, lens height roughly 30 cm, moderate depth of field: the desk
+surface and the hands sharp, the wall and the room edges soft. The notepad stays in the
+centre of the frame throughout. The bottom left edge of the frame is the owner's side, the
+lower right corner is the roommate's side. No zoom, no pan, no dolly, no rack focus, no
+handheld shake beyond breathing level, no camera movement of any kind.
 
 LOOK
-Warm single-source lamp light from upper left with realistic falloff into shadow at the
-lower right, soft cool fill from the far left, skin lit warmly on the near side, contact
-shadows under the hands and the paper, slight grain, documentary realism, ordinary
-unstyled student desk, no glamour.
+Warm single-source lamp light from the upper left with realistic falloff toward the lower
+right, dim cool window fill from the far left, skin lit warmly on the near side, real
+contact shadows under the hands and the paper, a faint soft-edged shadow of the standing
+person resting across the lower right corner of the desk, slight grain, documentary
+realism, an ordinary unstyled dorm desk against a real wall, no glamour, no moody colour
+grade.
 
 FORBID
 Faces, heads, arms longer than the wrist, any visible forearm or body;
@@ -360,11 +413,11 @@ perfectly clean surfaces, artificial studio perfection.
 |------|------|
 | 起手 | "完全延续给定参考帧"——桌面长相 100% 来自基准图 |
 | 技术 | 9:16 / 1080×1920 / 24fps / iPhone 主摄 f2.0 / 自然光 / 无滤镜 / 微颗粒 / 真实皮肤毛孔 / 指甲短而不修边 / 呼吸级微抖 |
-| 场景锁定 | 复述基准图每一个物件与位置，并明确"不许加、删、移动任何物件，不许改构图" |
-| 角色 | **只到袖口，不许出现手腕以上**；灰=我、米白=她；每人只用右手；画面同时最多两只手 |
+| 场景锁定 | 复述**宿舍书桌靠墙**的完整现场：上缘的墙 + 白漆 + 双孔插座 + 垂下来的黑充电线、左侧窗的冷光、桌面木纹与水渍印、靠墙排的台灯/马克杯/笔筒、正中的空白便签、左下的纸堆与倒扣手机、**右下角空成裸木**；明确"不许加删移动任何物件、不许把墙拍丢、不许改构图" |
+| 角色 | **只到袖口，不许出现手腕以上**；灰=我（**坐左下**）、米白=她（**站右下角俯身**）；两人手的入画角度必须不同；每人只用右手；画面同时最多两只手；手不交叉不换边 |
 | 节拍 | 五拍时间码，动作全部可执行、字面因果 |
-| 机位 | 固定 45° 俯拍、高 30cm、无任何运镜（**AI 默认爱推拉，必须明令禁止**） |
-| 观感 | 单光源暖光+左侧冷补、真实接触阴影、纪实感、普通学生桌面、不打光美化 |
+| 机位 | 固定 50° 俯拍、在我左肩后上方、高 30cm、无任何运镜（**AI 默认爱推拉，必须明令禁止**） |
+| 观感 | 单光源暖光+左侧冷补、真实接触阴影、**右下角站着那个人的淡影**、纪实感、真实宿舍桌面、不打光美化 |
 | 禁止项 | 脸/手臂/任何文字数字/**除一个叉一个勾以外的任何符号**/手机屏与 UI/多余手与手指/物件漂移/剪辑运镜/字幕水印/塑料皮肤 |
 
 #### 生成参数（照着填）
@@ -372,7 +425,7 @@ perfectly clean surfaces, artificial studio perfection.
 | 参数 | 值 | 说明 |
 |------|----|------|
 | 时长 | **24s**（上限 30s，别顶满） | 留余量给模型收尾，顶满容易在最后一秒变形 |
-| 首帧图 | `desk-main.jpg` | 一致性/参考强度**拉到最高** |
+| 首帧图 | `desk-main.png` | 一致性/参考强度**拉到最高** |
 | 分辨率 | 1080×1920（9:16） | |
 | 运动幅度 / 动态强度 | **中等偏低** | 长镜头动作一多就糊、手就变形；宁可动作慢半拍 |
 | 随机种子 | **成功那次记下 seed** | 后续每条视频用同 seed，观感（颗粒/色彩/光线）最接近 |
@@ -428,7 +481,10 @@ perfectly clean surfaces, artificial studio perfection.
 - [ ] **全片没有计时器、没有手机屏、没有任何字**
 
 **生成质量（一次过，不修）**
-- [ ] 桌面木纹、台灯、水杯、两支笔、纸堆位置与 `desk-main.jpg` 一致（逐帧比对）
+- [ ] 桌面木纹、台灯、马克杯、笔筒、纸堆位置与 `desk-main.png` 一致（逐帧比对）
+- [ ] **画面上缘的墙还在**：白漆、插座、垂下的充电线都没丢（丢了就变成"悬浮桌面"，一眼假）
+- [ ] **她的位置对**：手从右下角斜下伸进来、角度比我的陡（她是站着的）；我的手从下缘偏左低角度伸进来
+- [ ] 右下角始终空着裸木，没有物件跑进去
 - [ ] 任意时刻**最多两只手**，无第三只手、无多指、无融合、无手腕以上部位入画
 - [ ] **纸面没有任何可读内容**：便签只有 ✗ 和 ✓；纸堆只有页边（放大 200% 也读不出任何字母/数字）
 - [ ] 拨页三下时纸页成扇形，**平面从未转向镜头**
@@ -596,7 +652,7 @@ Hesitant fear mood, warm-cool mixed light, realistic hand tremor, no text, no wa
 
 ## 一致性检查（每周视频发出前过一遍）
 
-- [ ] 桌面物件与 `desk-main.jpg` 一致（笔/杯/台灯/纸堆位置没漂移）
+- [ ] 桌面物件与 `desk-main.png` 一致（笔/杯/台灯/纸堆位置没漂移）
 - [ ] **袖口身份对**（我=深灰连帽衫 / 她=米白针织，每支视频都不能混）
 - [ ] 比分与主表连续（**V-M1 从 me 3 : her 0 开局** → 后续每天只增不减，分差自然拉开）
 - [ ] 倒计时数字正确（**day 1 = 14 days**：14 → 13 → 12 → 10）
